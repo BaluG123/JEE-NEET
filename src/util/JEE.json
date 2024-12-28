@@ -1,0 +1,79 @@
+{
+    "questions": [
+      {
+        "id": "PHY001",
+        "subject": "Physics",
+        "level": 1,
+        "question": "A particle moves in a circle of radius 2m with a constant speed of 4m/s. What is the magnitude of its acceleration?",
+        "options": [
+          "8 m/s²",
+          "4 m/s²",
+          "16 m/s²",
+          "2 m/s²"
+        ],
+        "hint": "Use the formula for centripetal acceleration: a = v²/r",
+        "solution": "Using the formula a = v²/r\nSubstituting v = 4 m/s and r = 2m\na = (4)²/2 = 16/2 = 8 m/s²\nTherefore, the magnitude of acceleration is 8 m/s²",
+        "correctOption": 0
+      },
+      {
+        "id": "CHEM001",
+        "subject": "Chemistry",
+        "level": 1,
+        "question": "What is the hybridization of carbon in ethyne (C₂H₂)?",
+        "options": [
+          "sp³",
+          "sp²",
+          "sp",
+          "sp³d"
+        ],
+        "hint": "Consider the triple bond between carbon atoms",
+        "solution": "In ethyne (C₂H₂), each carbon atom forms one sigma bond with hydrogen and one triple bond (one sigma and two pi bonds) with the other carbon atom. This requires linear geometry with bond angles of 180°, which is characteristic of sp hybridization.",
+        "correctOption": 2
+      },
+      {
+        "id": "MATH001",
+        "subject": "Mathematics",
+        "level": 2,
+        "question": "If sin θ + cosec θ = 2, then the value of cos θ + sec θ is:",
+        "options": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "hint": "Use the relation between sin θ and cosec θ, and cos θ and sec θ",
+        "solution": "Given: sin θ + 1/sin θ = 2\nMultiplying both sides by sin θ: sin²θ + 1 = 2sin θ\nsin²θ - 2sin θ + 1 = 0\n(sin θ - 1)² = 0\nTherefore, sin θ = 1\nUsing this, cos θ = 0\nHence, cos θ + sec θ = 0 + 1/0 = undefined",
+        "correctOption": 1
+      },
+      {
+        "id": "PHY002",
+        "subject": "Physics",
+        "level": 3,
+        "question": "A capacitor of capacitance 6 μF is charged by a 100V battery. The energy stored in the capacitor is:",
+        "options": [
+          "30 mJ",
+          "300 mJ",
+          "3 J",
+          "30 J"
+        ],
+        "hint": "Use the formula E = ½CV²",
+        "solution": "Energy stored in capacitor = ½CV²\nwhere C = 6 μF = 6 × 10⁻⁶ F\nV = 100 V\nE = ½ × (6 × 10⁻⁶) × (100)²\n  = 3 × 10⁻⁴ × 10⁴\n  = 30 × 10⁻³\n  = 30 mJ",
+        "correctOption": 0
+      },
+      {
+        "id": "CHEM002",
+        "subject": "Chemistry",
+        "level": 3,
+        "question": "The pH of a 10⁻⁸ M HCl solution at 25°C is:",
+        "options": [
+          "8",
+          "7",
+          "6.96",
+          "7.04"
+        ],
+        "hint": "Consider both H⁺ from HCl and H⁺ from water's self-ionization",
+        "solution": "For very dilute solutions, we need to consider H⁺ from both HCl and water.\nH⁺ from HCl = 10⁻⁸ M\nH⁺ from water = 10⁻⁷ M\nTotal [H⁺] = √((10⁻⁸)² + (10⁻⁷)²)\n= 1.04 × 10⁻⁷ M\npH = -log[H⁺] = -log(1.04 × 10⁻⁷) = 6.96",
+        "correctOption": 2
+      }
+    ]
+  }

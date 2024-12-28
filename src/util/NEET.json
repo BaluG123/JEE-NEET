@@ -1,0 +1,109 @@
+{
+    "questions": [
+      {
+        "id": "BIO001",
+        "subject": "Biology",
+        "level": 1,
+        "question": "Which of the following organelles is known as the powerhouse of the cell?",
+        "options": [
+          "Mitochondria",
+          "Golgi apparatus",
+          "Endoplasmic reticulum",
+          "Lysosome"
+        ],
+        "hint": "This organelle is responsible for cellular respiration and ATP production",
+        "solution": "Mitochondria are called the powerhouse of the cell because they produce energy in the form of ATP through cellular respiration. They have a double membrane structure and contain their own DNA. The inner membrane is folded to form cristae which increase the surface area for ATP production.",
+        "correctOption": 0
+      },
+      {
+        "id": "CHEM001",
+        "subject": "Chemistry",
+        "level": 2,
+        "question": "Which of the following electronic configurations represents the ground state of Fe²⁺ ion?",
+        "options": [
+          "[Ar]3d⁶4s²",
+          "[Ar]3d⁶4s⁰",
+          "[Ar]3d⁵4s¹",
+          "[Ar]3d⁴4s²"
+        ],
+        "hint": "Consider the neutral Fe configuration and removal of electrons to form Fe²⁺",
+        "solution": "Neutral Fe has configuration [Ar]3d⁶4s². When forming Fe²⁺, electrons are first removed from 4s orbital before 3d. So, both 4s electrons are removed, leaving [Ar]3d⁶4s⁰ as the ground state configuration of Fe²⁺.",
+        "correctOption": 1
+      },
+      {
+        "id": "PHY001",
+        "subject": "Physics",
+        "level": 1,
+        "question": "A person has a far point at 200 cm. What is the power of lens needed to correct this defect?",
+        "options": [
+          "-0.5 D",
+          "+0.5 D",
+          "-1.0 D",
+          "+1.0 D"
+        ],
+        "hint": "Use P = -1/far point (in meters) for myopia",
+        "solution": "For myopia correction:\nP = -1/far point (in meters)\nFar point = 200 cm = 2 m\nP = -1/2 = -0.5 D\nA concave lens of power -0.5 diopter is needed",
+        "correctOption": 0
+      },
+      {
+        "id": "BIO002",
+        "subject": "Biology",
+        "level": 3,
+        "question": "In a dihybrid cross between AABB × aabb, what proportion of the F2 generation will show both dominant phenotypes?",
+        "options": [
+          "9/16",
+          "3/16",
+          "1/16",
+          "15/16"
+        ],
+        "hint": "Use the Punnett square method and consider the 9:3:3:1 ratio",
+        "solution": "In F1 generation, all plants will be AaBb\nIn F2, when AaBb × AaBb:\nPossible phenotype ratios are 9:3:3:1\n9/16 show both dominant traits (A_B_)\n3/16 show only dominant A (A_bb)\n3/16 show only dominant B (aaB_)\n1/16 show both recessive (aabb)\nTherefore, 9/16 of F2 will show both dominant phenotypes",
+        "correctOption": 0
+      },
+      {
+        "id": "CHEM002",
+        "subject": "Chemistry",
+        "level": 2,
+        "question": "What is the IUPAC name of CH₃-CH=CH-CHO?",
+        "options": [
+          "But-2-enal",
+          "But-3-enal",
+          "But-2-enoic acid",
+          "But-3-enol"
+        ],
+        "hint": "Consider the longest carbon chain containing the functional group and numbering from the aldehyde group",
+        "solution": "1. Identify the functional group: aldehyde (-CHO)\n2. Find longest carbon chain: 4 carbons (but-)\n3. Double bond is between C2 and C3 when numbered from aldehyde end\n4. Add suffix -al for aldehyde\nTherefore, the IUPAC name is but-2-enal",
+        "correctOption": 0
+      },
+      {
+        "id": "PHY002",
+        "subject": "Physics",
+        "level": 3,
+        "question": "A wire of resistance 8Ω is bent in the form of a circle. The effective resistance between two points at the ends of any diameter of the circle is:",
+        "options": [
+          "2Ω",
+          "4Ω",
+          "6Ω",
+          "8Ω"
+        ],
+        "hint": "Consider parallel combination of two semicircular arcs",
+        "solution": "When measuring across diameter:\n1. The circle splits into two parallel semicircular paths\n2. Each semicircle has resistance = 4Ω (half of total resistance)\n3. These semicircles are in parallel\n4. Using parallel resistance formula:\n1/R = 1/4 + 1/4 = 2/4\nR = 2Ω",
+        "correctOption": 0
+      },
+      {
+        "id": "BIO003",
+        "subject": "Biology",
+        "level": 2,
+        "question": "Which hormone is responsible for maintaining the circadian rhythm in humans?",
+        "options": [
+          "Melatonin",
+          "Serotonin",
+          "Cortisol",
+          "Thyroxine"
+        ],
+        "hint": "This hormone is secreted by the pineal gland and its secretion is influenced by light/dark cycles",
+        "solution": "Melatonin is the key hormone responsible for circadian rhythm:\n1. Secreted by pineal gland\n2. Production increases in darkness\n3. Suppressed by light exposure\n4. Regulates sleep-wake cycle\n5. Peaks at night (around 2-3 AM)\n6. Helps maintain daily biological rhythms",
+        "correctOption": 0
+      }
+    ]
+  }
