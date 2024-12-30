@@ -49,6 +49,1541 @@
       "hint": "Consider both H⁺ from HCl and H⁺ from water's self-ionization",
       "solution": "For very dilute solutions, we need to consider H⁺ from both HCl and water.\nH⁺ from HCl = 10⁻⁸ M\nH⁺ from water = 10⁻⁷ M\nTotal [H⁺] = √((10⁻⁸)² + (10⁻⁷)²)\n= 1.04 × 10⁻⁷ M\npH = -log[H⁺] = -log(1.04 × 10⁻⁷) = 6.96",
       "correctOption": 2
+    },
+    {
+      "id": "PHY003",
+      "subject": "Physics",
+      "level": 6,
+      "question": "A particle executes simple harmonic motion with amplitude A. If the maximum velocity is v₀, then the velocity v at displacement x is given by:",
+      "options": [
+        "v = v₀√(1 - x²/A²)",
+        "v = v₀(1 - x²/A²)",
+        "v = v₀√(x²/A²)",
+        "v = v₀(x²/A²)"
+      ],
+      "hint": "Use conservation of energy in SHM",
+      "solution": "In SHM, total energy E = ½kA² = ½mv₀²\nAt any point, E = ½kx² + ½mv²\nSubstituting and solving:\n½mv₀² = ½kx² + ½mv²\nv² = v₀²(1 - x²/A²)\nv = v₀√(1 - x²/A²)",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM003",
+      "subject": "Chemistry",
+      "level": 7,
+      "question": "For the reaction N₂O₄ ⇌ 2NO₂, Kp = 0.5 atm at 300K. If the initial pressure is 2 atm and degree of dissociation is x, find x.",
+      "options": ["0.33", "0.25", "0.5", "0.4"],
+      "hint": "Use the relationship between Kp and degree of dissociation",
+      "solution": "Let initial pressure = P₀\nAt equilibrium: P(N₂O₄) = P₀(1-x), P(NO₂) = 2P₀x\nTotal pressure = P₀(1-x) + 2P₀x = P₀(1+x)\nKp = [P(NO₂)]²/[P(N₂O₄)] = 4P₀x²/(1-x)\nSubstituting values and solving: 0.5 = 8x²/(1-x)\nx = 0.25",
+      "correctOption": 1
+    },
+    {
+      "id": "MATH002",
+      "subject": "Mathematics",
+      "level": 8,
+      "question": "If the area bounded by the curve y = sin x, x-axis, and the lines x = 0 and x = π is divided into two equal parts by the line x = a, then a equals:",
+      "options": ["π/3", "π/2", "2π/3", "π/4"],
+      "hint": "Use definite integration and area equality",
+      "solution": "Total area = ∫₀ᵖ sin x dx = [-cos x]₀ᵖ = 2\nFor equal areas: ∫₀ᵃ sin x dx = ∫ₐᵖ sin x dx\n[-cos x]₀ᵃ = [-cos x]ₐᵖ\n1 - cos a = -cos π + cos a\n2cos a = 1\na = π/3",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY004",
+      "subject": "Physics",
+      "level": 9,
+      "question": "An electron and a proton are accelerated through the same potential difference. The ratio of their de Broglie wavelengths (λₑ/λₚ) is:",
+      "options": ["1", "√(mₚ/mₑ)", "mₚ/mₑ", "√(mₑ/mₚ)"],
+      "hint": "Use de Broglie wavelength formula and kinetic energy relation",
+      "solution": "λ = h/p = h/√(2mK)\nK = qV (same for both)\nλₑ/λₚ = √(mₚ/mₑ)\nSubstituting mass values:\n√(1836) ≈ 42.85",
+      "correctOption": 1
+    },
+    {
+      "id": "CHEM004",
+      "subject": "Chemistry",
+      "level": 10,
+      "question": "The pH of buffer solution prepared by mixing 100mL of 0.2M CH₃COOH and 100mL of 0.1M CH₃COONa is: (Ka = 1.8 × 10⁻⁵)",
+      "options": ["4.74", "5.74", "3.74", "6.74"],
+      "hint": "Use Henderson-Hasselbalch equation",
+      "solution": "pH = pKa + log([salt]/[acid])\npKa = -log(1.8 × 10⁻⁵) = 4.74\n[acid] = (0.2 × 0.1)/(0.2) = 0.1M\n[salt] = (0.1 × 0.1)/(0.2) = 0.05M\npH = 4.74 + log(0.05/0.1) = 4.74 - 0.3 = 4.74",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH003",
+      "subject": "Mathematics",
+      "level": 11,
+      "question": "If f(x) = x² + 1 and g(x) = 2x - 1, then the value of f(g(2)) is:",
+      "options": ["5", "9", "7", "3"],
+      "hint": "Find g(2) first and then substitute in f(x)",
+      "solution": "g(2) = 2(2) - 1 = 3\nf(g(2)) = f(3) = 3² + 1 = 9",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY005",
+      "subject": "Physics",
+      "level": 12,
+      "question": "A block of mass 2kg is placed on a rough horizontal surface. A force of 10N is applied on the block. If the coefficient of static friction is 0.5, the minimum force required to move the block is:",
+      "options": ["5N", "10N", "15N", "20N"],
+      "hint": "Consider the forces acting on the block",
+      "solution": "The maximum static frictional force is given by: fₛ = μₛN\nN = mg = 2 × 9.8 = 19.6N\nfₛ = 0.5 × 19.6 = 9.8N\nTo move the block, the applied force must overcome this frictional force. Therefore, the minimum force required is 9.8N.",
+      "correctOption": 1
+    },
+    {
+      "id": "CHEM005",
+      "subject": "Chemistry",
+      "level": 13,
+      "question": "The number of unpaired electrons in the complex [Co(NH₃)₄Cl₂]Cl is:",
+      "options": ["1", "2", "3", "4"],
+      "hint": "Determine the oxidation state of cobalt and the number of ligands",
+      "solution": "Oxidation state of Co = x\n4(0) + 2(-1) + 1 = x\nx = +2\nCo²⁺ has 3d⁷  configuration\nNH₃ is a strong field ligand\nTherefore, the complex is low spin and has 1 unpaired electron.",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH004",
+      "subject": "Mathematics",
+      "level": 14,
+      "question": "If the roots of the equation x² - 5x + 6 = 0 are a and b, then the value of (a - 1)(b - 1) is:",
+      "options": ["-1", "1", "2", "3"],
+      "hint": "Use Vieta's formulas",
+      "solution": "a + b = 5, ab = 6\n(a - 1)(b - 1) = ab - (a + b) + 1 = 6 - 5 + 1 = 2",
+      "correctOption": 2
+    },
+    {
+      "id": "PHY006",
+      "subject": "Physics",
+      "level": 15,
+      "question": "A ball is thrown vertically upwards with a velocity of 20m/s. The time taken for the ball to reach the highest point is:",
+      "options": ["2s", "4s", "6s", "8s"],
+      "hint": "Use the kinematic equation for vertical motion",
+      "solution": "At the highest point, the vertical velocity becomes 0\nv = u + at\n0 = 20 - 9.8t\nt = 20/9.8 ≈ 2.04s",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM006",
+      "subject": "Chemistry",
+      "level": 16,
+      "question": "The oxidation state of nitrogen in NH₄NO₃ is:",
+      "options": ["-3", "+3", "+5", "+4"],
+      "hint": "Consider the oxidation states of hydrogen and oxygen",
+      "solution": "Let oxidation state of N be x\nNH₄⁺: 4(+1) + x = +1\nx = -3\nNO₃⁻: x + 3(-2) = -1\nx = +5",
+      "correctOption": 2
+    },
+    {
+      "id": "MATH005",
+      "subject": "Mathematics",
+      "level": 17,
+      "question": "If f(x) = x³ - 3x² + 2x + 1, then the value of f(2) is:",
+      "options": ["1", "3", "5", "7"],
+      "hint": "Substitute x = 2 in the given function",
+      "solution": "f(2) = 2³ - 3(2)² + 2(2) + 1 = 8 - 12 + 4 + 1 = 1",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY007",
+      "subject": "Physics",
+      "level": 18,
+      "question": "A car travels a distance of 100m with a uniform speed of 10m/s. The time taken to cover the distance is:",
+      "options": ["10s", "20s", "30s", "40s"],
+      "hint": "Use the formula for speed",
+      "solution": "Speed = Distance/Time\nTime = Distance/Speed = 100/10 = 10s",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM007",
+      "subject": "Chemistry",
+      "level": 19,
+      "question": "The number of moles of oxygen in 6.02 × 10²³ molecules of CO₂ is:",
+      "options": ["1", "2", "3", "4"],
+      "hint": "Consider the stoichiometry of CO₂",
+      "solution": "1 molecule of CO₂ contains 1 atom of C and 2 atoms of O\nTherefore, 6.02 × 10²³ molecules of CO₂ contain 6.02 × 10²³ atoms of C and 2 × 6.02 × 10²³ atoms of O\nNumber of moles of O = (2 × 6.02 × 10²³)/(6.02 × 10²³) = 2",
+      "correctOption": 1
+    },
+    {
+      "id": "MATH006",
+      "subject": "Mathematics",
+      "level": 20,
+      "question": "If f(x) = 2x + 1 and g(x) = x² - 1, then the value of f(g(2)) is:",
+      "options": ["5", "9", "7", "3"],
+      "hint": "Find g(2) first and then substitute in f(x)",
+      "solution": "g(2) = 2² - 1 = 3\nf(g(2)) = f(3) = 2(3) + 1 = 7",
+      "correctOption": 2
+    },
+    {
+      "id": "PHY008",
+      "subject": "Physics",
+      "level": 21,
+      "question": "A body of mass 5kg is moving with a velocity of 10m/s. The kinetic energy of the body is:",
+      "options": ["50 J", "100 J", "150 J", "200 J"],
+      "hint": "Use the formula for kinetic energy",
+      "solution": "Kinetic energy = ½mv² = 0.5 × 5 × 10² = 250/2 = 125 J",
+      "correctOption": 2
+    },
+    {
+      "id": "CHEM008",
+      "subject": "Chemistry",
+      "level": 22,
+      "question": "The number of moles of HCl present in 100mL of 0.1M HCl solution is:",
+      "options": ["0.1", "0.01", "0.001", "0.0001"],
+      "hint": "Use the definition of molarity",
+      "solution": "Molarity = Number of moles/Volume in liters\n0.1 = Number of moles/0.1\nNumber of moles = 0.1 × 0.1 = 0.01",
+      "correctOption": 1
+    },
+    {
+      "id": "MATH007",
+      "subject": "Mathematics",
+      "level": 23,
+      "question": "If f(x) = x² + 2x + 1, then the value of f(-1) is:",
+      "options": ["0", "1", "2", "3"],
+      "hint": "Substitute x = -1 in the given function",
+      "solution": "f(-1) = (-1)² + 2(-1) + 1 = 1 - 2 + 1 = 0",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY009",
+      "subject": "Physics",
+      "level": 24,
+      "question": "A body of mass 2kg is moving with a velocity of 5m/s. The momentum of the body is:",
+      "options": ["10 kg m/s", "5 kg m/s", "15 kg m/s", "20 kg m/s"],
+      "hint": "Use the formula for momentum",
+      "solution": "Momentum = mass × velocity = 2 × 5 = 10 kg m/s",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM009",
+      "subject": "Chemistry",
+      "level": 25,
+      "question": "The number of moles of NaOH in 250mL of 0.2M NaOH solution is:",
+      "options": ["0.05", "0.1", "0.2", "0.5"],
+      "hint": "Use the definition of molarity",
+      "solution": "Molarity = Number of moles/Volume in liters\n0.2 = Number of moles/0.25\nNumber of moles = 0.2 × 0.25 = 0.05",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH008",
+      "subject": "Mathematics",
+      "level": 26,
+      "question": "If f(x) = x³ - 3x² + 3x - 1, then the value of f(1) is:",
+      "options": ["0", "1", "2", "3"],
+      "hint": "Substitute x = 1 in the given function",
+      "solution": "f(1) = 1³ - 3(1)² + 3(1) - 1 = 1 - 3 + 3 - 1 = 0",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY010",
+      "subject": "Physics",
+      "level": 27,
+      "question": "A body of mass 10kg is moving with a velocity of 5m/s. The kinetic energy of the body is:",
+      "options": ["25 J", "50 J", "75 J", "100 J"],
+      "hint": "Use the formula for kinetic energy",
+      "solution": "Kinetic energy = ½mv² = 0.5 × 10 × 5² = 0.5 × 10 × 25 = 125 J",
+      "correctOption": 2
+    },
+    {
+      "id": "CHEM010",
+      "subject": "Chemistry",
+      "level": 28,
+      "question": "The number of moles of H₂SO₄ in 500mL of 0.1M H₂SO₄ solution is:",
+      "options": ["0.05", "0.1", "0.2", "0.5"],
+      "hint": "Use the definition of molarity",
+      "solution": "Molarity = Number of moles/Volume in liters\n0.1 = Number of moles/0.5\nNumber of moles = 0.1 × 0.5 = 0.05",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH009",
+      "subject": "Mathematics",
+      "level": 29,
+      "question": "If f(x) = x² - 2x + 1, then the value of f(2) is:",
+      "options": ["0", "1", "2", "3"],
+      "hint": "Substitute x = 2 in the given function",
+      "solution": "f(2) = 2² - 2(2) + 1 = 4 - 4 + 1 = 1",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY011",
+      "subject": "Physics",
+      "level": 30,
+      "question": "A body of mass 5kg is moving with a velocity of 10m/s. The momentum of the body is:",
+      "options": ["50 kg m/s", "100 kg m/s", "150 kg m/s", "200 kg m/s"],
+      "hint": "Use the formula for momentum",
+      "solution": "Momentum = mass × velocity = 5 × 10 = 50 kg m/s",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM011",
+      "subject": "Chemistry",
+      "level": 31,
+      "question": "The number of moles of NaCl in 200mL of 0.1M NaCl solution is:",
+      "options": ["0.02", "0.04", "0.06", "0.08"],
+      "hint": "Use the definition of molarity",
+      "solution": "Molarity = Number of moles/Volume in liters\n0.1 = Number of moles/0.2\nNumber of moles = 0.1 × 0.2 = 0.02",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH010",
+      "subject": "Mathematics",
+      "level": 32,
+      "question": "If f(x) = x³ - 3x² + 3x - 1, then the value of f(2) is:",
+      "options": ["0", "1", "2", "3"],
+      "hint": "Substitute x = 2 in the given function",
+      "solution": "f(2) = 2³ - 3(2)² + 3(2) - 1 = 8 - 12 + 6 - 1 = 1",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY012",
+      "subject": "Physics",
+      "level": 33,
+      "question": "A body of mass 2kg is moving with a velocity of 5m/s. The kinetic energy of the body is:",
+      "options": ["25 J", "50 J", "75 J", "100 J"],
+      "hint": "Use the formula for kinetic energy",
+      "solution": "Kinetic energy = ½mv² = 0.5 × 2 × 5² = 0.5 × 2 × 25 = 25 J",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM012",
+      "subject": "Chemistry",
+      "level": 34,
+      "question": "The number of moles of HCl in 250mL of 0.2M HCl solution is:",
+      "options": ["0.05", "0.1", "0.2", "0.5"],
+      "hint": "Use the definition of molarity",
+      "solution": "Molarity = Number of moles/Volume in liters\n0.2 = Number of moles/0.25\nNumber of moles = 0.2 × 0.25 = 0.05",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH011",
+      "subject": "Mathematics",
+      "level": 35,
+      "question": "If f(x) = x² - 2x + 1, then the value of f(2) is:",
+      "options": ["0", "1", "2", "3"],
+      "hint": "Substitute x = 2 in the given function",
+      "solution": "f(2) = 2² - 2(2) + 1 = 4 - 4 + 1 = 1",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY013",
+      "subject": "Physics",
+      "level": 36,
+      "question": "A body of mass 5kg is moving with a velocity of 10m/s. The momentum of the body is:",
+      "options": ["50 kg m/s", "100 kg m/s", "150 kg m/s", "200 kg m/s"],
+      "hint": "Use the formula for momentum",
+      "solution": "Momentum = mass × velocity = 5 × 10 = 50 kg m/s",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM013",
+      "subject": "Chemistry",
+      "level": 37,
+      "question": "The number of moles of NaOH in 200mL of 0.1M NaOH solution is:",
+      "options": ["0.02", "0.04", "0.06", "0.08"],
+      "hint": "Use the definition of molarity",
+      "solution": "Molarity = Number of moles/Volume in liters\n0.1 = Number of moles/0.2\nNumber of moles = 0.1 × 0.2 = 0.02",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH012",
+      "subject": "Mathematics",
+      "level": 38,
+      "question": "If f(x) = x³ - 3x² + 3x - 1, then the value of f(2) is:",
+      "options": ["0", "1", "2", "3"],
+      "hint": "Substitute x = 2 in the given function",
+      "solution": "f(2) = 2³ - 3(2)² + 3(2) - 1 = 8 - 12 + 6 - 1 = 1",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY014",
+      "subject": "Physics",
+      "level": 39,
+      "question": "A body of mass 2kg is moving with a velocity of 5m/s. The kinetic energy of the body is:",
+      "options": ["25 J", "50 J", "75 J", "100 J"],
+      "hint": "Use the formula for kinetic energy",
+      "solution": "Kinetic energy = ½mv² = 0.5 × 2 × 5² = 0.5 × 2 × 25 = 25 J",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM014",
+      "subject": "Chemistry",
+      "level": 40,
+      "question": "The number of moles of HCl in 250mL of 0.2M HCl solution is:",
+      "options": ["0.05", "0.1", "0.2", "0.5"],
+      "hint": "Use the definition of molarity",
+      "solution": "Molarity = Number of moles/Volume in liters\n0.2 = Number of moles/0.25\nNumber of moles = 0.2 × 0.25 = 0.05",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY041",
+      "subject": "Physics",
+      "level": 41,
+      "question": "A quantum particle is confined in a 1-D box of length L. If the box is suddenly expanded to 2L, what is the probability of finding the particle in the first excited state if it was initially in the ground state?",
+      "options": ["4/9π²", "8/9π²", "16/9π²", "32/9π²"],
+      "hint": "Use sudden approximation and overlap integral of wavefunctions",
+      "solution": "Initial wavefunction ψᵢ = √(2/L)sin(πx/L)\nFinal wavefunction ψₙ = √(1/2L)sin(nπx/2L)\nProbability = |∫ψᵢ*ψₙdx|²\nFor n=2 (first excited state):\nP = |∫₀ᴸ√(2/L)sin(πx/L)√(1/2L)sin(2πx/2L)dx|²\nSolving gives 4/9π²",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM041",
+      "subject": "Chemistry",
+      "level": 42,
+      "question": "In a complex [Co(NH₃)₄Cl₂]Br, if all chlorides are precipitated with AgNO₃, the number of moles of AgCl formed per mole of complex is:",
+      "options": ["1", "2", "3", "0"],
+      "hint": "Consider linkage isomerism and coordination sphere",
+      "solution": "In [Co(NH₃)₄Cl₂]Br:\nTwo Cl⁻ are in coordination sphere (inner)\nOne Br⁻ is ionizable (outer)\nOnly ionizable halides react with AgNO₃\nTherefore, only Br⁻ will form precipitate\nBut Br⁻ forms AgBr, not AgCl\nHence, 0 moles of AgCl formed",
+      "correctOption": 3
+    },
+    {
+      "id": "MATH041",
+      "subject": "Mathematics",
+      "level": 43,
+      "question": "If f(x) = x³ - 3x² + 4 and g(x) = 2x² - 5x + 3, then the number of values of k for which f(x) + kg(x) has exactly one extreme value is:",
+      "options": ["1", "2", "3", "0"],
+      "hint": "Use derivative test and discriminant analysis",
+      "solution": "f'(x) + kg'(x) = 3x² - 6x + k(4x - 5)\n= 3x² - 6x + 4kx - 5k\n= 3x² + (4k-6)x - 5k\nFor exactly one extreme value, discriminant = 0\n(4k-6)² - 4(3)(-5k) = 0\n16k² - 48k + 36 - 60k = 0\n16k² - 108k + 36 = 0\nk = 3 (double root)\nTherefore, only one value of k",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY042",
+      "subject": "Physics",
+      "level": 44,
+      "question": "A charged particle moves in crossed electric (E) and magnetic (B) fields. If v is its drift velocity, then the magnitude of its instantaneous velocity (u) at any point in its cycloidal path is given by:",
+      "options": ["u = v", "u = 2v", "u = v√2", "u = constant ≠ v"],
+      "hint": "Consider energy conservation and guiding center analysis",
+      "solution": "In E×B drift:\nDrift velocity v = E/B\nTotal motion is combination of drift and cyclotron motion\nKinetic energy remains constant\n½m(u²) = ½m(v²) + ½m(v_⊥²)\nwhere v_⊥ = v\nTherefore, u² = 2v²\nu = v√2",
+      "correctOption": 2
+    },
+    {
+      "id": "CHEM042",
+      "subject": "Chemistry",
+      "level": 45,
+      "question": "For the reaction 2NO₂ + F₂ → 2NO₂F, the rate is found to be: rate = k[NO₂][F₂]. If the mechanism involves formation of NF as an intermediate, which step is rate determining?",
+      "options": [
+        "NO₂ + F₂ → NF + NO₂F",
+        "NF + NO₂ → NO₂F + F",
+        "F + NO₂ → NO₂F",
+        "Cannot be determined"
+      ],
+      "hint": "Apply steady state approximation to intermediate",
+      "solution": "Possible mechanism:\nStep 1: NO₂ + F₂ ⇌ NF + NO₂F (k₁, k₋₁)\nStep 2: NF + NO₂ → NO₂F + F (k₂)\nStep 3: F + NO₂ → NO₂F (k₃)\nApplying steady state to NF:\nd[NF]/dt = k₁[NO₂][F₂] - k₋₁[NF][NO₂F] - k₂[NF][NO₂] = 0\nRate = k₁[NO₂][F₂] matches experimental rate\nTherefore, Step 1 is rate determining",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH042",
+      "subject": "Mathematics",
+      "level": 46,
+      "question": "The area between the curves r = 2sin(3θ) and r = 2sin(2θ) in polar coordinates is:",
+      "options": ["π/3", "2π/3", "π", "4π/3"],
+      "hint": "Use area formula in polar coordinates and find intersection points",
+      "solution": "Area = ½∫|r₁² - r₂²|dθ\n= ½∫|4sin²(3θ) - 4sin²(2θ)|dθ\nIntersection points: sin(3θ) = sin(2θ)\n3θ = 2θ + π or 3θ = π - 2θ\nθ = π or θ = π/5\nIntegrating over appropriate limits:\n= 2∫[sin²(3θ) - sin²(2θ)]dθ from 0 to π/3\n= π/3",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY043",
+      "subject": "Physics",
+      "level": 47,
+      "question": "A particle of mass m and charge q is projected with velocity v perpendicular to a magnetic field B which exists in a region of length L. If the particle emerges making an angle θ with its initial direction, then qBL equals:",
+      "options": ["mv tan θ", "mv sin θ", "mv/sin θ", "2mv sin(θ/2)"],
+      "hint": "Consider circular motion in magnetic field and time of flight",
+      "solution": "In B field: F = qvB (perpendicular)\nRadius of circular path R = mv/qB\nTime in field t = L/v\nAngle traced = ωt = (v/R)(L/v) = qBL/mv\nThis equals θ\nTherefore qBL = mv tan θ\nNote: This assumes small angle approximation",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM043",
+      "subject": "Chemistry",
+      "level": 48,
+      "question": "For an adiabatic reaction A → B + C in gas phase, if ΔU = -3RT and initial pressure is P, the final pressure at same volume and temperature is:",
+      "options": ["4P/3", "3P/2", "5P/3", "2P"],
+      "hint": "Use ideal gas equation and stoichiometry",
+      "solution": "For ideal gas: ΔU = nᶠCᵥRT - nⁱCᵥRT + ΔU(reaction)\nwhere nᶠ = 2, nⁱ = 1\n0 = (2-1)CᵥRT - 3RT\nCᵥ = 3R\nThis implies monatomic gases\nUsing PV = nRT:\nPᶠ/Pⁱ = nᶠ/nⁱ = 2/1\nTherefore, Pᶠ = 2P",
+      "correctOption": 3
+    },
+    {
+      "id": "MATH043",
+      "subject": "Mathematics",
+      "level": 49,
+      "question": "If z₁, z₂, z₃ are complex numbers such that |z₁| = |z₂| = |z₃| = 1 and z₁ + z₂ + z₃ = 0, then the value of |z₁z₂ + z₂z₃ + z₃z₁| is:",
+      "options": ["1", "2", "3", "0"],
+      "hint": "Use properties of complex numbers on unit circle",
+      "solution": "Given: |z₁| = |z₂| = |z₃| = 1 and z₁ + z₂ + z₃ = 0\nSquaring z₁ + z₂ + z₃ = 0:\n(z₁ + z₂ + z₃)² = 0\nz₁² + z₂² + z₃² + 2(z₁z₂ + z₂z₃ + z₃z₁) = 0\nFor unit complex numbers: z₁² + z₂² + z₃² = 3 - 2(z₁z₂ + z₂z₃ + z₃z₁)\nTherefore |z₁z₂ + z₂z₃ + z₃z₁| = 3/2",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY044",
+      "subject": "Physics",
+      "level": 50,
+      "question": "A particle performs small oscillations about stable equilibrium under a force F = -kx - bx³. If E is the total energy and ω₀ = √(k/m), then the time period T is proportional to:",
+      "options": ["E⁻¹/₄", "E⁻¹/₂", "E¹/₄", "E⁰"],
+      "hint": "Use energy conservation and perturbation theory",
+      "solution": "For anharmonic oscillator:\nE = ½kx² + ¼bx⁴\nAmplitude A: E = ½kA² + ¼bA⁴\nTime period T = 2π/ω\nω = ω₀(1 + 3bA²/8k)\nSubstituting A in terms of E:\nA² ≈ 2E/k (to first order)\nTherefore T ∝ E⁻¹/₄",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM044",
+      "subject": "Chemistry",
+      "level": 51,
+      "question": "For the reaction A + B → C, the rate law is given by rate = k[A]²[B]. If the rate of reaction is doubled by doubling the concentration of A and halving the concentration of B, the order of reaction with respect to A and B is:",
+      "options": ["2, 1", "1, 2", "1, 1", "2, 2"],
+      "hint": "Use rate law and stoichiometry",
+      "solution": "rate = k[A]²[B]\nrate' = k[2A]²[0.5B] = 4k[A]²[B]/2 = 2k[A]²[B]\nTherefore, order with respect to A is 2 and with respect to B is 1",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH044",
+      "subject": "Mathematics",
+      "level": 52,
+      "question": "If f(x) = x³ - 3x² + 4 and g(x) = 2x² - 5x + 3, then the number of values of k for which f(x) + kg(x) has exactly one extreme value is:",
+      "options": ["1", "2", "3", "0"],
+      "hint": "Use derivative test and discriminant analysis",
+      "solution": "f'(x) + kg'(x) = 3x² - 6x + k(4x - 5)\n= 3x² - 6x + 4kx - 5k\n= 3x² + (4k-6)x - 5k\nFor exactly one extreme value, discriminant = 0\n(4k-6)² - 4(3)(-5k) = 0\n16k² - 48k + 36 - 60k = 0\n16k² - 108k + 36 = 0\nk = 3 (double root)\nTherefore, only one value of k",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY045",
+      "subject": "Physics",
+      "level": 53,
+      "question": "A particle of mass m and charge q is projected with velocity v perpendicular to a magnetic field B which exists in a region of length L. If the particle emerges making an angle θ with its initial direction, then qBL equals:",
+      "options": ["mv tan θ", "mv sin θ", "mv/sin θ", "2mv sin(θ/2)"],
+      "hint": "Consider circular motion in magnetic field and time of flight",
+      "solution": "In B field: F = qvB (perpendicular)\nRadius of circular path R = mv/qB\nTime in field t = L/v\nAngle traced = ωt = (v/R)(L/v) = qBL/mv\nThis equals θ\nTherefore qBL = mv tan θ\nNote: This assumes small angle approximation",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM045",
+      "subject": "Chemistry",
+      "level": 54,
+      "question": "For an adiabatic reaction A → B + C in gas phase, if ΔU = -3RT and initial pressure is P, the final pressure at same volume and temperature is:",
+      "options": ["4P/3", "3P/2", "5P/3", "2P"],
+      "hint": "Use ideal gas equation and stoichiometry",
+      "solution": "For ideal gas: ΔU = nᶠCᵥRT - nⁱCᵥRT + ΔU(reaction)\nwhere nᶠ = 2, nⁱ = 1\n0 = (2-1)CᵥRT - 3RT\nCᵥ = 3R\nThis implies monatomic gases\nUsing PV = nRT:\nPᶠ/Pⁱ = nᶠ/nⁱ = 2/1\nTherefore, Pᶠ = 2P",
+      "correctOption": 3
+    },
+    {
+      "id": "MATH045",
+      "subject": "Mathematics",
+      "level": 55,
+      "question": "If z₁, z₂, z₃ are complex numbers such that |z₁| = |z₂| = |z₃| = 1 and z₁ + z₂ + z₃ = 0, then the value of |z₁z₂ + z₂z₃ + z₃z₁| is:",
+      "options": ["1", "2", "3", "0"],
+      "hint": "Use properties of complex numbers on unit circle",
+      "solution": "Given: |z₁| = |z₂| = |z₃| = 1 and z₁ + z₂ + z₃ = 0\nSquaring z₁ + z₂ + z₃ = 0:\n(z₁ + z₂ + z₃)² = 0\nz₁² + z₂² + z₃² + 2(z₁z₂ + z₂z₃ + z₃z₁) = 0\nFor unit complex numbers: z₁² + z₂² + z₃² = 3 - 2(z₁z₂ + z₂z₃ + z₃z₁)\nTherefore |z₁z₂ + z₂z₃ + z₃z₁| = 3/2",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY046",
+      "subject": "Physics",
+      "level": 56,
+      "question": "A particle performs small oscillations about stable equilibrium under a force F = -kx - bx³. If E is the total energy and ω₀ = √(k/m), then the time period T is proportional to:",
+      "options": ["E⁻¹/₄", "E⁻¹/₂", "E¹/₄", "E⁰"],
+      "hint": "Use energy conservation and perturbation theory",
+      "solution": "For anharmonic oscillator:\nE = ½kx² + ¼bx⁴\nAmplitude A: E = ½kA² + ¼bA⁴\nTime period T = 2π/ω\nω = ω₀(1 + 3bA²/8k)\nSubstituting A in terms of E:\nA² ≈ 2E/k (to first order)\nTherefore T ∝ E⁻¹/₄",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM046",
+      "subject": "Chemistry",
+      "level": 57,
+      "question": "For the reaction A + B → C, the rate law is given by rate = k[A]²[B]. If the rate of reaction is doubled by doubling the concentration of A and halving the concentration of B, the order of reaction with respect to A and B is:",
+      "options": ["2, 1", "1, 2", "1, 1", "2, 2"],
+      "hint": "Use rate law and stoichiometry",
+      "solution": "rate = k[A]²[B]\nrate' = k[2A]²[0.5B] = 4k[A]²[B]/2 = 2k[A]²[B]\nTherefore, order with respect to A is 2 and with respect to B is 1",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH046",
+      "subject": "Mathematics",
+      "level": 58,
+      "question": "If f(x) = x³ - 3x² + 4 and g(x) = 2x² - 5x + 3, then the number of values of k for which f(x) + kg(x) has exactly one extreme value is:",
+      "options": ["1", "2", "3", "0"],
+      "hint": "Use derivative test and discriminant analysis",
+      "solution": "f'(x) + kg'(x) = 3x² - 6x + k(4x - 5)\n= 3x² - 6x + 4kx - 5k\n= 3x² + (4k-6)x - 5k\nFor exactly one extreme value, discriminant = 0\n(4k-6)² - 4(3)(-5k) = 0\n16k² - 48k + 36 - 60k = 0\n16k² - 108k + 36 = 0\nk = 3 (double root)\nTherefore, only one value of k",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY047",
+      "subject": "Physics",
+      "level": 59,
+      "question": "A particle of mass m and charge q is projected with velocity v perpendicular to a magnetic field B which exists in a region of length L. If the particle emerges making an angle θ with its initial direction, then qBL equals:",
+      "options": ["mv tan θ", "mv sin θ", "mv/sin θ", "2mv sin(θ/2)"],
+      "hint": "Consider circular motion in magnetic field and time of flight",
+      "solution": "In B field: F = qvB (perpendicular)\nRadius of circular path R = mv/qB\nTime in field t = L/v\nAngle traced = ωt = (v/R)(L/v) = qBL/mv\nThis equals θ\nTherefore qBL = mv tan θ\nNote: This assumes small angle approximation",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM047",
+      "subject": "Chemistry",
+      "level": 60,
+      "question": "For an adiabatic reaction A → B + C in gas phase, if ΔU = -3RT and initial pressure is P, the final pressure at same volume and temperature is:",
+      "options": ["4P/3", "3P/2", "5P/3", "2P"],
+      "hint": "Use ideal gas equation and stoichiometry",
+      "solution": "For ideal gas: ΔU = nᶠCᵥRT - nⁱCᵥRT + ΔU(reaction)\nwhere nᶠ = 2, nⁱ = 1\n0 = (2-1)CᵥRT - 3RT\nCᵥ = 3R\nThis implies monatomic gases\nUsing PV = nRT:\nPᶠ/Pⁱ = nᶠ/nⁱ = 2/1\nTherefore, Pᶠ = 2P",
+      "correctOption": 3
+    },
+    {
+      "id": "MATH047",
+      "subject": "Mathematics",
+      "level": 61,
+      "question": "If z₁, z₂, z₃ are complex numbers such that |z₁| = |z₂| = |z₃| = 1 and z₁ + z₂ + z₃ = 0, then the value of |z₁z₂ + z₂z₃ + z₃z₁| is:",
+      "options": ["1", "2", "3", "0"],
+      "hint": "Use properties of complex numbers on unit circle",
+      "solution": "Given: |z₁| = |z₂| = |z₃| = 1 and z₁ + z₂ + z₃ = 0\nSquaring z₁ + z₂ + z₃ = 0:\n(z₁ + z₂ + z₃)² = 0\nz₁² + z₂² + z₃² + 2(z₁z₂ + z₂z₃ + z₃z₁) = 0\nFor unit complex numbers: z₁² + z₂² + z₃² = 3 - 2(z₁z₂ + z₂z₃ + z₃z₁)\nTherefore |z₁z₂ + z₂z₃ + z₃z₁| = 3/2",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY048",
+      "subject": "Physics",
+      "level": 62,
+      "question": "A particle performs small oscillations about stable equilibrium under a force F = -kx - bx³. If E is the total energy and ω₀ = √(k/m), then the time period T is proportional to:",
+      "options": ["E⁻¹/₄", "E⁻¹/₂", "E¹/₄", "E⁰"],
+      "hint": "Use energy conservation and perturbation theory",
+      "solution": "For anharmonic oscillator:\nE = ½kx² + ¼bx⁴\nAmplitude A: E = ½kA² + ¼bA⁴\nTime period T = 2π/ω\nω = ω₀(1 + 3bA²/8k)\nSubstituting A in terms of E:\nA² ≈ 2E/k (to first order)\nTherefore T ∝ E⁻¹/₄",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM048",
+      "subject": "Chemistry",
+      "level": 63,
+      "question": "For the reaction A + B → C, the rate law is given by rate = k[A]²[B]. If the rate of reaction is doubled by doubling the concentration of A and halving the concentration of B, the order of reaction with respect to A and B is:",
+      "options": ["2, 1", "1, 2", "1, 1", "2, 2"],
+      "hint": "Use rate law and stoichiometry",
+      "solution": "rate = k[A]²[B]\nrate' = k[2A]²[0.5B] = 4k[A]²[B]/2 = 2k[A]²[B]\nTherefore, order with respect to A is 2 and with respect to B is 1",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY064",
+      "subject": "Physics",
+      "level": 64,
+      "question": "In a Young's double-slit experiment, when the space between slits is filled with a medium of refractive index μ, the central maximum shifts by 2.5 fringes. If the wavelength of light in air is 600nm, slit separation is 0.6mm, and screen distance is 2m, find μ.",
+      "options": ["1.25", "1.50", "1.75", "2.00"],
+      "hint": "Consider optical path difference and fringe width relation",
+      "solution": "Fringe width β = λD/d\nShift = (μ-1)t/λ × β\nwhere t is thickness\n2.5 = (μ-1)(0.6×10⁻³)/(600×10⁻⁹) × (600×10⁻⁹×2)/(0.6×10⁻³)\nSimplifying: 2.5 = 2(μ-1)\nTherefore μ = 1.25",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM064",
+      "subject": "Chemistry",
+      "level": 65,
+      "question": "For the reaction A + B ⇌ C + D, initial concentrations are [A]₀ = [B]₀ = 1M, [C]₀ = [D]₀ = 0M. If Kc = 4 and 80% of A reacts at equilibrium, the rate constant k₁ is (given k₂ = 2s⁻¹):",
+      "options": ["8 s⁻¹", "16 s⁻¹", "4 s⁻¹", "32 s⁻¹"],
+      "hint": "Use equilibrium constant and rate equation relationship",
+      "solution": "Let x be amount reacted\nx = 0.8M\n[A]ₑ = [B]ₑ = 0.2M\n[C]ₑ = [D]ₑ = 0.8M\nKc = k₁/k₂ = [C]ₑ[D]ₑ/[A]ₑ[B]ₑ\n4 = k₁/2 = (0.8)²/(0.2)²\nk₁ = 8 s⁻¹",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH064",
+      "subject": "Mathematics",
+      "level": 66,
+      "question": "If f(x) = x + 1/x where x > 0, then the minimum value of ∫₁ᵃ[f(x)]²dx where a > 1 occurs when a equals:",
+      "options": ["√2", "2", "e", "π"],
+      "hint": "Use calculus and minimize the integral",
+      "solution": "Let I(a) = ∫₁ᵃ(x + 1/x)²dx\n= ∫₁ᵃ(x² + 2 + 1/x²)dx\n= [x³/3 + 2x - 1/x]₁ᵃ\n= a³/3 + 2a - 1/a - (1/3 + 2 - 1)\ndI/da = a² + 2 + 1/a² = 0\na⁴ + 2a² + 1 = 0\na = √2",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY065",
+      "subject": "Physics",
+      "level": 67,
+      "question": "A quantum particle in an infinite potential well of width L is in its ground state. The well width is suddenly doubled to 2L. The expectation value of energy immediately after the change is:",
+      "options": ["E₁/4", "E₁/2", "E₁", "2E₁"],
+      "hint": "Use sudden approximation and expansion in new eigenstates",
+      "solution": "Initial state ψᵢ = √(2/L)sin(πx/L)\nNew eigenstates ϕₙ = √(1/2L)sin(nπx/2L)\nExpansion coefficients cₙ = ∫ψᵢϕₙdx\nE = Σ|cₙ|²Eₙ\nCalculating first few terms:\n|c₁|² = 8/9π²\n|c₃|² = 8/π²\n...\nΣ|cₙ|²Eₙ = E₁/4",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM065",
+      "subject": "Chemistry",
+      "level": 68,
+      "question": "For the reaction N₂O₄(g) ⇌ 2NO₂(g), ΔH = 57.2 kJ/mol at 298K. If Kp changes from 0.142 at 298K to 0.318 at 318K, calculate ΔS° at 298K (R = 8.314 J/K/mol).",
+      "options": [
+        "176.2 J/K/mol",
+        "186.2 J/K/mol",
+        "196.2 J/K/mol",
+        "166.2 J/K/mol"
+      ],
+      "hint": "Use van't Hoff equation and Gibbs free energy relation",
+      "solution": "ln(K₂/K₁) = -(ΔH/R)(1/T₂ - 1/T₁)\nSubstituting values:\nln(0.318/0.142) = -(57200/8.314)(1/318 - 1/298)\nΔG° = -RTlnK = ΔH - TΔS\nAt 298K: ΔG° = -8.314×298×ln(0.142)\nTherefore ΔS° = (ΔH - ΔG°)/T = 176.2 J/K/mol",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH065",
+      "subject": "Mathematics",
+      "level": 69,
+      "question": "The number of real values of k for which the system of equations: x² + y² = 1, kx + y = 1 has exactly one solution is:",
+      "options": ["2", "3", "4", "1"],
+      "hint": "Consider tangency condition of line and circle",
+      "solution": "Line intersects circle at: (kx + 1)² + x² = 1\n(k² + 1)x² + 2kx + 1 - 1 = 0\nFor exactly one solution, discriminant = 0\n4k² - 4(k² + 1)(0) = 0\nk² = 1\nk = ±1\nTherefore 2 values of k",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY066",
+      "subject": "Physics",
+      "level": 70,
+      "question": "A particle of mass m moves under a central force F = -kr + αr³ where k,α > 0. If E is total energy and L is angular momentum, the condition for circular orbit of radius R is:",
+      "options": [
+        "L² = mR³(k - αR²)",
+        "L² = mR³(k + αR²)",
+        "L² = mR²(k - αR²)",
+        "L² = mR⁴(k - αR²)"
+      ],
+      "hint": "Use effective potential and force balance",
+      "solution": "For circular orbit:\nF = mv²/r = mω²r\nL = mr²ω\nF = -kr + αr³ = L²/mr³\n-kR + αR³ = L²/mR³\nL² = mR³(k - αR²)",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM066",
+      "subject": "Chemistry",
+      "level": 71,
+      "question": "In the complex [Co(en)₂Cl₂]⁺, if the rate constant for aquation of first Cl⁻ is k₁ and for second Cl⁻ is k₂, then k₁/k₂ equals:",
+      "options": ["4", "2", "1/2", "1/4"],
+      "hint": "Consider trans effect and statistical factors",
+      "solution": "For cis isomer:\nFirst Cl⁻: 2 equivalent positions\nSecond Cl⁻: 1 position\nStatistical factor = 2\nTrans effect increases rate by factor of 2\nTherefore k₁/k₂ = 2 × 2 = 4",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH066",
+      "subject": "Mathematics",
+      "level": 72,
+      "question": "If f(x) = ∫₀ˣ(1-t²)ⁿdt where n is a positive integer, then the number of points in [0,1] where f''(x) = 0 is:",
+      "options": ["n", "n-1", "n+1", "n-2"],
+      "hint": "Use fundamental theorem and find inflection points",
+      "solution": "f'(x) = (1-x²)ⁿ\nf''(x) = -2nx(1-x²)ⁿ⁻¹\nf''(x) = 0 when x = 0 or x = ±1\nIn [0,1], x = 0 and x = 1 are solutions\nAlso, when n is even, x = 1 is not an inflection point\nTherefore total n points",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY067",
+      "subject": "Physics",
+      "level": 73,
+      "question": "A particle executes motion under potential V(x) = kx⁴/4. If E is its energy, the time period of oscillation is proportional to:",
+      "options": ["E⁻¹/₄", "E¹/₄", "E⁻¹/₂", "E¹/₂"],
+      "hint": "Use energy conservation and dimensional analysis",
+      "solution": "From energy conservation: E = ½mv² + kx⁴/4\nAmplitude A: E = kA⁴/4\nPeriod T = 4∫₀ᴬdx/v\n= 4∫₀ᴬdx/√(2E/m - kx⁴/2m)\n= 4√(m/2E)∫₀ᴬdx/√(1 - x⁴/A⁴)\nSubstituting u = x/A\nT ∝ 1/√E × A ∝ E⁻¹/₄",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM067",
+      "subject": "Chemistry",
+      "level": 74,
+      "question": "For the reaction 2A + B → C, initial rates method shows rate = k[A][B]². If [A]₀ = 0.2M, [B]₀ = 0.1M and 25% of A reacts in 20 minutes, calculate k (in M⁻²s⁻¹):",
+      "options": ["0.25", "0.5", "1.0", "2.0"],
+      "hint": "Use integrated rate law and stoichiometry",
+      "solution": "Rate = k[A][B]²\nd[A]/dt = -2k[A][B]²\nd[B]/dt = -k[A][B]²\nB is limiting\nIntegrating: 1/[B] - 1/[B]₀ = k∫[A]dt\n1/(0.075) - 1/(0.1) = k(0.2)(1200)\nk = 0.25 M⁻²s⁻¹",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH067",
+      "subject": "Mathematics",
+      "level": 75,
+      "question": "If z is complex with |z| = 1, then the locus of point P(z) where P(z) = ∫₀ᶻ(1+w⁴)dw is:",
+      "options": ["Circle", "Ellipse", "Parabola", "Straight line"],
+      "hint": "Evaluate integral along unit circle",
+      "solution": "P(z) = z + z⁵/5\nFor |z| = 1: z = e^(iθ)\nP(z) = e^(iθ) + e^(5iθ)/5\nReal part = cos θ + cos(5θ)/5\nImaginary part = sin θ + sin(5θ)/5\nParametrically describes circle",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY068",
+      "subject": "Physics",
+      "level": 76,
+      "question": "A particle of charge q and mass m is projected with velocity v parallel to a magnetic field B₁. If it enters a region with magnetic field B₂ making angle θ with B₁, the pitch of helical path is:",
+      "options": [
+        "2πmv cos θ/qB₂",
+        "2πmv/qB₂",
+        "2πmv sin θ/qB₂",
+        "πmv cos θ/qB₂"
+      ],
+      "hint": "Decompose velocity and use helical motion parameters",
+      "solution": "v∥ = v cos θ\nv⊥ = v sin θ\nRadius = mv⊥/qB₂\nAngular velocity = qB₂/m\nTime period = 2πm/qB₂\nPitch = v∥T = 2πmv cos θ/qB₂",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM068",
+      "subject": "Chemistry",
+      "level": 77,
+      "question": "For the reaction A + B ⇌ C + D, initial concentrations are [A]₀ = [B]₀ = 1M, [C]₀ = [D]₀ = 0M. If Kc = 4 and 80% of A reacts at equilibrium, the rate constant k₁ is (given k₂ = 2s⁻¹):",
+      "options": ["8 s⁻¹", "16 s⁻¹", "4 s⁻¹", "32 s⁻¹"],
+      "hint": "Use equilibrium constant and rate equation relationship",
+      "solution": "Let x be amount reacted\nx = 0.8M\n[A]ₑ = [B]ₑ = 0.2M\n[C]ₑ = [D]ₑ = 0.8M\nKc = k₁/k₂ = [C]ₑ[D]ₑ/[A]ₑ[B]ₑ\n4 = k₁/2 = (0.8)²/(0.2)²\nk₁ = 8 s⁻¹",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH068",
+      "subject": "Mathematics",
+      "level": 78,
+      "question": "If f(x) = x + 1/x where x > 0, then the minimum value of ∫₁ᵃ[f(x)]²dx where a > 1 occurs when a equals:",
+      "options": ["√2", "2", "e", "π"],
+      "hint": "Use calculus and minimize the integral",
+      "solution": "Let I(a) = ∫₁ᵃ(x + 1/x)²dx\n= ∫₁ᵃ(x² + 2 + 1/x²)dx\n= [x³/3 + 2x - 1/x]₁ᵃ\n= a³/3 + 2a - 1/a - (1/3 + 2 - 1)\ndI/da = a² + 2 + 1/a² = 0\na⁴ + 2a² + 1 = 0\na = √2",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY069",
+      "subject": "Physics",
+      "level": 79,
+      "question": "A quantum particle in an infinite potential well of width L is in its ground state. The well width is suddenly doubled to 2L. The expectation value of energy immediately after the change is:",
+      "options": ["E₁/4", "E₁/2", "E₁", "2E₁"],
+      "hint": "Use sudden approximation and expansion in new eigenstates",
+      "solution": "Initial state ψᵢ = √(2/L)sin(πx/L)\nNew eigenstates ϕₙ = √(1/2L)sin(nπx/2L)\nExpansion coefficients cₙ = ∫ψᵢϕₙdx\nE = Σ|cₙ|²Eₙ\nCalculating first few terms:\n|c₁|² = 8/9π²\n|c₃|² = 8/π²\n...\nΣ|cₙ|²Eₙ = E₁/4",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM069",
+      "subject": "Chemistry",
+      "level": 80,
+      "question": "For the reaction N₂O₄(g) ⇌ 2NO₂(g), ΔH = 57.2 kJ/mol at 298K. If Kp changes from 0.142 at 298K to 0.318 at 318K, calculate ΔS° at 298K (R = 8.314 J/K/mol).",
+      "options": [
+        "176.2 J/K/mol",
+        "186.2 J/K/mol",
+        "196.2 J/K/mol",
+        "166.2 J/K/mol"
+      ],
+      "hint": "Use van't Hoff equation and Gibbs free energy relation",
+      "solution": "ln(K₂/K₁) = -(ΔH/R)(1/T₂ - 1/T₁)\nSubstituting values:\nln(0.318/0.142) = -(57200/8.314)(1/318 - 1/298)\nΔG° = -RTlnK = ΔH - TΔS\nAt 298K: ΔG° = -8.314×298×ln(0.142)\nTherefore ΔS° = (ΔH - ΔG°)/T = 176.2 J/K/mol",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH069",
+      "subject": "Mathematics",
+      "level": 81,
+      "question": "The number of real values of k for which the system of equations: x² + y² = 1, kx + y = 1 has exactly one solution is:",
+      "options": ["2", "3", "4", "1"],
+      "hint": "Consider tangency condition of line and circle",
+      "solution": "Line intersects circle at: (kx + 1)² + x² = 1\n(k² + 1)x² + 2kx + 1 - 1 = 0\nFor exactly one solution, discriminant = 0\n4k² - 4(k² + 1)(0) = 0\nk² = 1\nk = ±1\nTherefore 2 values of k",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY070",
+      "subject": "Physics",
+      "level": 82,
+      "question": "A particle of mass m moves under a central force F = -kr + αr³ where k,α > 0. If E is total energy and L is angular momentum, the condition for circular orbit of radius R is:",
+      "options": [
+        "L² = mR³(k - αR²)",
+        "L² = mR³(k + αR²)",
+        "L² = mR²(k - αR²)",
+        "L² = mR⁴(k - αR²)"
+      ],
+      "hint": "Use effective potential and force balance",
+      "solution": "For circular orbit:\nF = mv²/r = mω²r\nL = mr²ω\nF = -kr + αr³ = L²/mr³\n-kR + αR³ = L²/mR³\nL² = mR³(k - αR²)",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY083",
+      "subject": "Physics",
+      "level": 83,
+      "question": "A particle executes simple harmonic motion with amplitude A. At a displacement x from equilibrium, the ratio of kinetic energy to potential energy is n. The value of x/A is:",
+      "options": ["1/√(n+1)", "√(n/(n+1))", "1/(n+1)", "n/(n+1)"],
+      "hint": "Use energy conservation and SHM energy equations",
+      "solution": "In SHM:\nTotal Energy E = KE + PE\nKE = (1/2)mω²(A² - x²)\nPE = (1/2)kx²\nGiven KE/PE = n\n(A² - x²)/x² = n\nx²(n+1) = A²\nx/A = ±1/√(n+1)",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY084",
+      "subject": "Physics",
+      "level": 84,
+      "question": "A cylindrical conductor of radius R carries current I uniformly distributed over its cross-section. At a distance r < R from its axis, the magnetic field B is proportional to:",
+      "options": ["1/r", "r", "r²", "Independent of r"],
+      "hint": "Use Ampere's law for current distribution inside conductor",
+      "solution": "For r < R:\nBy Ampere's law, consider current only within radius r\nI' = I(r/R)² (due to uniform distribution)\nB(2πr) = μ₀I'\nB = μ₀I(r/R²)/(2π)\nThus B ∝ r",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY085",
+      "subject": "Physics",
+      "level": 85,
+      "question": "Two identical springs of force constant k are connected to a mass m. If one connection is parallel and other is series, the ratio of their frequencies of oscillation (ωparallel/ωseries) is:",
+      "options": ["1", "√2", "2", "4"],
+      "hint": "Calculate effective spring constant for both arrangements",
+      "solution": "For parallel: keff = 2k\nωparallel = √(2k/m)\nFor series: keff = k/2\nωseries = √(k/2m)\nRatio = ωparallel/ωseries = 2",
+      "correctOption": 2
+    },
+    {
+      "id": "PHY086",
+      "subject": "Physics",
+      "level": 86,
+      "question": "A photon of energy E is absorbed by an electron initially at rest. The maximum de Broglie wavelength λ of the electron after absorption is:",
+      "options": ["hc/E", "h/√(2mE)", "h√(2mE)", "hE/mc²"],
+      "hint": "Use energy-momentum conservation and de Broglie relation",
+      "solution": "Energy conservation: E = (1/2)mv²\nde Broglie wavelength: λ = h/p = h/mv\nv = √(2E/m)\nλ = h/√(2mE)",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY087",
+      "subject": "Physics",
+      "level": 87,
+      "question": "A particle moves in a potential V(x) = kx⁴. If the total energy is E, the time period of oscillation T is proportional to:",
+      "options": ["E^(-1/4)", "E^(1/4)", "E^(-3/4)", "E^(3/4)"],
+      "hint": "Use dimensional analysis and scaling arguments",
+      "solution": "For x⁴ potential:\nE = (1/2)mv² + kx⁴\nBy dimensional analysis:\nT ∝ √(m/k)/E^(1/4)\nT ∝ E^(-1/4)",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY088",
+      "subject": "Physics",
+      "level": 88,
+      "question": "Two identical charged particles each of mass m and charge q are suspended by insulating strings of length L. At equilibrium, the strings make angle θ with vertical. The angular frequency of small oscillations about equilibrium is:",
+      "options": ["√(g/L)", "√(3g/L)", "√(2g/L)", "√(4g/L)"],
+      "hint": "Consider both gravitational and electrostatic forces",
+      "solution": "At equilibrium: tan θ = q²/(4πε₀mgd²)\nFor small oscillations:\nRestoring force = mg sin θ - (q²/4πε₀d²)\nω = √(g/L + q²/4πε₀mL³)\nAt equilibrium: q²/4πε₀mL³ = 2g/L\nThus ω = √(3g/L)",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY089",
+      "subject": "Physics",
+      "level": 89,
+      "question": "A quantum particle is confined in a one-dimensional box of length L. The uncertainty in its momentum when it is in nth energy state is:",
+      "options": ["nπℏ/L", "nπℏ/2L", "nπℏ/√3L", "2nπℏ/L"],
+      "hint": "Use wave function and momentum operator",
+      "solution": "Wave function: ψn = √(2/L)sin(nπx/L)\n⟨p²⟩ = (nπℏ/L)²\n⟨p⟩ = 0\nΔp = √(⟨p²⟩ - ⟨p⟩²) = nπℏ/L",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY090",
+      "subject": "Physics",
+      "level": 90,
+      "question": "A particle of mass m and charge q moves in crossed electric and magnetic fields E = Eĵ and B = Bk̂. The particle moves undeflected with velocity v. The magnitude of v is:",
+      "options": ["E/B", "qE/mB", "qB/mE", "EB/q"],
+      "hint": "For undeflected motion, net force must be zero",
+      "solution": "Forces: Electric qE and Magnetic qvB\nFor undeflected motion:\nqE = qvB\nv = E/B",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY091",
+      "subject": "Physics",
+      "level": 91,
+      "question": "A particle is subjected to two simple harmonic motions of same amplitude and frequency in perpendicular directions with phase difference π/2. The particle traces an ellipse. The angular momentum L about the center at any instant is:",
+      "options": ["mωA²", "mωA²/2", "2mωA²", "Variable"],
+      "hint": "Use parametric equations of ellipse and angular momentum formula",
+      "solution": "x = A cos(ωt), y = A sin(ωt)\nvx = -Aω sin(ωt), vy = Aω cos(ωt)\nL = m(xvy - yvx)\nL = mωA²",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY092",
+      "subject": "Physics",
+      "level": 92,
+      "question": "An electron in a hydrogen atom transitions from an excited state with quantum number n to ground state. If the wavelength of emitted photon is λ, the quantum number n is:",
+      "options": ["√(1 - λ/λ₀)", "√(1 + λ/λ₀)", "√(1 - λ₀/λ)", "√(1 + λ₀/λ)"],
+      "hint": "Use Rydberg formula and energy levels",
+      "solution": "Energy difference: ΔE = 13.6(1 - 1/n²)\nλ = hc/ΔE\nλ₀ = hc/13.6\n1/λ = (1/λ₀)(1 - 1/n²)\nn = √(1/(1 - λ/λ₀))",
+      "correctOption": 3
+    },
+    {
+      "id": "PHY093",
+      "subject": "Physics",
+      "level": 93,
+      "question": "A particle moves in a potential V(r) = -k/r + αr where k,α > 0. The radius r₀ at which the effective potential has minimum for circular orbit with angular momentum L is:",
+      "options": ["∛(k/α)", "(L²/mk)^(1/3)", "(k/2α)^(1/3)", "(L²/mα)^(1/4)"],
+      "hint": "Use effective potential Veff = L²/2mr² + V(r) and minimize",
+      "solution": "Veff = L²/2mr² - k/r + αr\ndVeff/dr = -L²/mr³ + k/r² + α = 0\nr³ = k/α\nr₀ = ∛(k/α)",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY094",
+      "subject": "Physics",
+      "level": 94,
+      "question": "A quantum particle is in superposition of first two energy states of infinite potential well: ψ = (ψ₁ + 2ψ₂)/√5. The expectation value of energy is:",
+      "options": ["5E₁/5", "9E₁/5", "4E₁/5", "3E₁/5"],
+      "hint": "Use expectation value formula and energy eigenvalues",
+      "solution": "⟨E⟩ = ∫ψ*Ĥψdx\nE₂ = 4E₁\n⟨E⟩ = (1/5)E₁ + (4/5)(4E₁)\n⟨E⟩ = 9E₁/5",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY095",
+      "subject": "Physics",
+      "level": 95,
+      "question": "A particle of mass m slides without friction on a cycloid x = R(θ - sinθ), y = R(1 - cosθ). The time period of oscillation is:",
+      "options": ["2π√(R/g)", "π√(R/g)", "4π√(R/g)", "2π√(R/2g)"],
+      "hint": "Use parametric equations and tautochrone property",
+      "solution": "For cycloid:\nds² = 4R(1-cosθ)dθ²\ny = R(1-cosθ)\nLeads to SHM equation\nT = 2π√(R/g)",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY096",
+      "subject": "Physics",
+      "level": 96,
+      "question": "A relativistic particle with rest mass m₀ has total energy E. Its momentum p is proportional to:",
+      "options": ["√(E² - m₀²c⁴)/c", "E/c", "√(E² + m₀²c⁴)/c", "Ec/m₀"],
+      "hint": "Use relativistic energy-momentum relation",
+      "solution": "E² = p²c² + m₀²c⁴\np = √(E² - m₀²c⁴)/c",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY097",
+      "subject": "Physics",
+      "level": 97,
+      "question": "Two identical particles of mass m move in a plane under mutual gravitational attraction. If E is total energy and L is total angular momentum, the minimum distance between particles is proportional to:",
+      "options": ["L²/mE", "-L²/mE", "L⁴/m²E", "L²/m²E"],
+      "hint": "Use conservation laws and effective potential for reduced mass problem",
+      "solution": "Reduced mass problem:\nμ = m/2\nVeff = L²/2μr² - GMm/r\nAt turning point: E = Veff\nrmin ∝ L²/mE",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY098",
+      "subject": "Physics",
+      "level": 98,
+      "question": "A quantum oscillator is in thermal equilibrium at temperature T. The uncertainty in position Δx is proportional to:",
+      "options": ["√(ℏ/mω)coth(ℏω/2kT)", "√(kT/mω²)", "√(ℏω/kT)", "√(kT/ℏω)"],
+      "hint": "Use quantum statistical mechanics and uncertainty relation",
+      "solution": "For quantum oscillator:\n⟨x²⟩ = (ℏ/2mω)coth(ℏω/2kT)\n⟨x⟩ = 0\nΔx = √⟨x²⟩\nΔx ∝ √(ℏ/mω)coth(ℏω/2kT)",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY099",
+      "subject": "Physics",
+      "level": 99,
+      "question": "A particle of mass m moves in a potential V(r) = kr^n where k,n are constants. If the orbit is circular with radius R and angular momentum L, then L is proportional to:",
+      "options": ["R^((n+2)/2)", "R^((n-2)/2)", "R^n", "R^((n+1)/2)"],
+      "hint": "Use force balance equation and angular momentum definition",
+      "solution": "For circular orbit:\nkr^(n-1) = L²/mr³\nL² = mkR^(n+2)\nL ∝ R^((n+2)/2)",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY100",
+      "subject": "Physics",
+      "level": 100,
+      "question": "A charged particle moves in a magnetic field B = B₀(x/a)ĵ, where B₀ and a are constants. If the particle starts from origin with velocity v₀î, find the maximum displacement in z-direction.",
+      "options": ["mv₀/qB₀", "2mv₀/qB₀", "4mv₀/qB₀", "3mv₀/qB₀"],
+      "hint": "Use Lorentz force and consider the particle's motion in steps",
+      "solution": "As particle moves in x-direction:\n1. Force will be in z-direction initially\n2. When particle reaches maximum height, velocity becomes horizontal again\n3. Using F = qv×B and integrating twice:\nz_max = 2mv₀/qB₀",
+      "correctOption": 1
+    },
+    {
+      "id": "CHEM100",
+      "subject": "Chemistry",
+      "level": 101,
+      "question": "For a first order reaction, if time taken for 75% completion is 60 minutes, calculate the time taken for 87.5% completion.",
+      "options": ["90 minutes", "120 minutes", "80 minutes", "100 minutes"],
+      "hint": "Use first order integrated rate equation and ratio method",
+      "solution": "For first order:\nt₁/t₂ = ln(1-x₁)/ln(1-x₂)\nt₈₇.₅/60 = ln(1-0.875)/ln(1-0.75)\nt₈₇.₅ = 90 minutes",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH100",
+      "subject": "Mathematics",
+      "level": 102,
+      "question": "If f(x) = x³ - 6x² + 12x - 8 and g(x) = f'(x)/f(x), then g(2) equals:",
+      "options": ["1", "2", "3", "4"],
+      "hint": "Find f'(x) and evaluate f(2) and f'(2)",
+      "solution": "f'(x) = 3x² - 12x + 12\nf(2) = 8 - 24 + 24 - 8 = 0\nAs x→2, g(2) = lim(f'(x)/f(x)) = 3\nUse L'Hôpital's rule",
+      "correctOption": 2
+    },
+    {
+      "id": "PHY110",
+      "subject": "Physics",
+      "level": 103,
+      "question": "A quantum particle is confined in a one-dimensional box of length L. If the box is suddenly expanded to 2L, what is the probability of finding the particle in the first excited state?",
+      "options": ["4/9π²", "16/25π²", "32/81π²", "64/49π²"],
+      "hint": "Use sudden approximation and overlap integral of wavefunctions",
+      "solution": "1. Initial wavefunction: ψᵢ = √(2/L)sin(2πx/L)\n2. Final wavefunction basis: φₙ = √(1/2L)sin(nπx/2L)\n3. Probability = |∫ψᵢφₙdx|²\n4. For n=2: P = 32/81π²",
+      "correctOption": 2
+    },
+    {
+      "id": "CHEM110",
+      "subject": "Chemistry",
+      "level": 104,
+      "question": "In a mixture of ideal gases A and B, the partial pressure of A is twice that of B at 300K. If the average molecular mass of the mixture is M and molecular mass of A is 2M/3, find the molecular mass of B in terms of M.",
+      "options": ["2M/3", "5M/6", "3M/4", "4M/3"],
+      "hint": "Use partial pressure relations and average molecular mass formula",
+      "solution": "Let nₐ,nᵦ be moles\npₐ/pᵦ = nₐ/nᵦ = 2\nM = (nₐMₐ + nᵦMᵦ)/(nₐ + nᵦ)\nSubstituting values: Mᵦ = 4M/3",
+      "correctOption": 3
+    },
+    {
+      "id": "MATH110",
+      "subject": "Mathematics",
+      "level": 105,
+      "question": "The area bounded by the curves |x| + |y| = 2 and xy = 1 is:",
+      "options": ["4 - 2ln(2)", "4 - ln(2)", "8 - 4ln(2)", "8 - 2ln(2)"],
+      "hint": "Break into regions and use integration with appropriate limits",
+      "solution": "1. Break into 4 symmetric regions\n2. For first quadrant:\nArea = ∫[1 to 2] (2-x - 1/x)dx\n3. Multiply by 4 for total area\n4. Result = 8 - 4ln(2)",
+      "correctOption": 2
+    },
+    {
+      "id": "PHY120",
+      "subject": "Physics",
+      "level": 106,
+      "question": "A rod of length L and mass M is suspended by two springs of spring constants k₁ and k₂ at distances a and b from the center. Find the frequency of torsional oscillations about the center.",
+      "options": [
+        "√((k₁a² + k₂b²)/ML²)",
+        "√((k₁a² + k₂b²)/3ML²)",
+        "√((k₁a² + k₂b²)/12ML²)",
+        "√((k₁a² + k₂b²)/6ML²)"
+      ],
+      "hint": "Use moment of inertia and torque equation",
+      "solution": "1. Moment of inertia I = ML²/12\n2. Restoring torque τ = -(k₁a²θ + k₂b²θ)\n3. ω² = (k₁a² + k₂b²)/I\n4. f = (1/2π)√((k₁a² + k₂b²)/12ML²)",
+      "correctOption": 2
+    },
+    {
+      "id": "CHEM120",
+      "subject": "Chemistry",
+      "level": 107,
+      "question": "For a reversible electrochemical cell, ΔG° = -nFE°. If temperature dependence of E° is given by dE°/dT = 2.0×10⁻⁴ V/K, calculate ΔS° for n = 2.",
+      "options": [
+        "38.6 J/K·mol",
+        "77.2 J/K·mol",
+        "19.3 J/K·mol",
+        "38.6 kJ/K·mol"
+      ],
+      "hint": "Use Maxwell relations and Gibbs free energy equation",
+      "solution": "1. ΔG° = -nFE°\n2. (∂ΔG°/∂T)ₚ = -ΔS°\n3. -nF(dE°/dT) = -ΔS°\n4. ΔS° = 2×96500×2.0×10⁻⁴ = 38.6 J/K·mol",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH120",
+      "subject": "Mathematics",
+      "level": 108,
+      "question": "If f(x) is a polynomial such that ∫[0 to 1]x²f(x)dx = 1, ∫[0 to 1]x³f(x)dx = 2, and ∫[0 to 1]x⁴f(x)dx = 3, then ∫[0 to 1]x⁵f(x)dx equals:",
+      "options": ["4", "5", "6", "7"],
+      "hint": "Use linear algebra and pattern recognition",
+      "solution": "1. Let f(x) = ax² + bx + c\n2. Form system of equations using given integrals\n3. Solve for a, b, c\n4. Integrate x⁵f(x) from 0 to 1\nResult = 4",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY109",
+      "subject": "Physics",
+      "level": 109,
+      "question": "A cylindrical conductor of radius R carries current I uniformly distributed over its cross-section. At a distance r < R from its axis, the magnetic field B(r) is proportional to:",
+      "options": ["r", "1/r", "r²", "1/r²"],
+      "hint": "Use Ampere's law for current enclosed within radius r",
+      "solution": "1. By Ampere's law: ∮B⋅dl = μ₀Ienclosed\n2. Ienclosed = I(πr²/πR²) = I(r²/R²)\n3. B(2πr) = μ₀I(r²/R²)\n4. Therefore, B ∝ r",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM109",
+      "subject": "Chemistry",
+      "level": 110,
+      "question": "In the reaction A + B ⟶ C + D, if [A] = [B] initially and rate = k[A][B], the time taken for 75% completion is t₁. If [A] = 2[B] initially, the time t₂ for 75% completion will be:",
+      "options": ["t₁/2", "t₁", "2t₁", "4t₁"],
+      "hint": "Use integrated rate equation for second order reaction with unequal initial concentrations",
+      "solution": "For equal concentrations:\n1/[A] - 1/[A]₀ = kt₁\nFor unequal concentrations:\n1/(a-b)ln(b[A]/a[B]) = kt₂\nSolving gives t₂ = 2t₁",
+      "correctOption": 2
+    },
+    {
+      "id": "MATH109",
+      "subject": "Mathematics",
+      "level": 111,
+      "question": "The area of the region bounded by |x| + |y| = 1 and |x - y| = 1 is:",
+      "options": ["1", "2", "3", "4"],
+      "hint": "Break into regions using absolute value conditions and integrate",
+      "solution": "1. Region forms a square\n2. |x| + |y| = 1 is a rhombus\n3. Intersection points: (1,0), (0,1), (-1,0), (0,-1)\n4. Area = 2 square units",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY111",
+      "subject": "Physics",
+      "level": 112,
+      "question": "A particle performs simple harmonic motion with amplitude A. At displacement x, its kinetic energy is equal to its potential energy. Then x/A equals:",
+      "options": ["1/√2", "1/2", "1/√3", "1/3"],
+      "hint": "Use energy conservation and SHM energy equations",
+      "solution": "1. KE = (1/2)mω²(A² - x²)\n2. PE = (1/2)kx² = (1/2)mω²x²\n3. When KE = PE:\nmω²(A² - x²) = mω²x²\n4. x = A/√2",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM111",
+      "subject": "Chemistry",
+      "level": 113,
+      "question": "For a weakly chemisorbed species, the heat of adsorption (ΔH) varies with surface coverage (θ) as ΔH = ΔH₀(1-αθ), where ΔH₀ and α are constants. The Langmuir isotherm for this case at temperature T will be:",
+      "options": [
+        "θ/(1-θ) = Kp",
+        "θ/(1-θ) = Kp^(1-αθ)",
+        "θ/(1-θ) = Kpe^(αθ/RT)",
+        "θ/(1-θ) = Kpe^(-αθ/RT)"
+      ],
+      "hint": "Modify Langmuir equation using given heat of adsorption",
+      "solution": "1. ln K = -ΔH/RT + constant\n2. K = K₀e^(-ΔH/RT)\n3. Substitute ΔH = ΔH₀(1-αθ)\n4. θ/(1-θ) = Kpe^(αθ/RT)",
+      "correctOption": 2
+    },
+    {
+      "id": "MATH111",
+      "subject": "Mathematics",
+      "level": 114,
+      "question": "If f(x) = x + 1/x and g(x) = x - 1/x, then f(g(x)) equals:",
+      "options": ["2x", "2x - 2/x³", "2x + 2/x³", "2"],
+      "hint": "Substitute g(x) into f(x) and simplify",
+      "solution": "1. g(x) = x - 1/x\n2. f(g(x)) = (x - 1/x) + 1/(x - 1/x)\n3. Rationalize and simplify\n4. f(g(x)) = 2x",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY113",
+      "subject": "Physics",
+      "level": 115,
+      "question": "A particle of mass m and charge q moves in a magnetic field B = B₀k̂ and electric field E = E₀î. If initially v = v₀ĵ, the maximum displacement in x-direction is:",
+      "options": ["2E₀/B₀ω", "E₀/B₀ω", "4E₀/B₀ω", "3E₀/B₀ω"],
+      "hint": "Use equations of motion and cyclotron frequency",
+      "solution": "1. Cyclotron frequency ω = qB₀/m\n2. Motion is cycloidal\n3. x_max occurs when v_y = 0\n4. x_max = 2E₀/B₀ω",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM113",
+      "subject": "Chemistry",
+      "level": 116,
+      "question": "For a gas showing negative deviation from ideal behavior, the van der Waals constant 'a' is 2 L²⋅atm/mol². At 300K, the minimum pressure required to liquify this gas is:",
+      "options": ["a/27RT", "a/54RT", "a/81RT", "a/108RT"],
+      "hint": "Use critical point conditions in van der Waals equation",
+      "solution": "1. At critical point: (∂P/∂V)T = (∂²P/∂V²)T = 0\n2. Pc = a/27RT\n3. Minimum pressure = Pc\n4. = 2/(27×0.082×300) atm",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH113",
+      "subject": "Mathematics",
+      "level": 117,
+      "question": "If ∫[0 to π/2](sin x)^n dx = P(n), then P(n+2)/P(n) equals:",
+      "options": ["n/(n+1)", "n/(n+2)", "(n-1)/n", "(n+1)/(n+2)"],
+      "hint": "Use reduction formula for sin^n x",
+      "solution": "1. Use ∫sin^n x = -sin^(n-1)x cos x/(n) + ((n-1)/n)∫sin^(n-2)x dx\n2. Apply limits\n3. Get recurrence relation\n4. P(n+2)/P(n) = n/(n+1)",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY115",
+      "subject": "Physics",
+      "level": 118,
+      "question": "A quantum particle in an infinite potential well of width 'a' is in its ground state. If the well width suddenly changes to 'a/2', the probability of finding the particle in the first excited state is:",
+      "options": ["16/9π²", "32/9π²", "8/π²", "4/π²"],
+      "hint": "Use sudden approximation and overlap integral",
+      "solution": "1. Initial state: ψᵢ = √(2/a)sin(πx/a)\n2. Final states: φₙ = √(2/(a/2))sin(nπx/(a/2))\n3. P = |∫ψᵢφₙdx|²\n4. For n=2, P = 16/9π²",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM115",
+      "subject": "Chemistry",
+      "level": 119,
+      "question": "For a reaction A ⟶ B + C, if ΔG° varies with temperature as ΔG° = a + bT + cT², where a, b, c are constants, then ΔH° at temperature T equals:",
+      "options": [
+        "a - bT - cT²",
+        "a + bT - cT²",
+        "a - bT + 2cT",
+        "a + bT + 2cT"
+      ],
+      "hint": "Use Gibbs-Helmholtz equation and temperature dependence",
+      "solution": "1. ΔG° = ΔH° - TΔS°\n2. d(ΔG°/T)/dT = -ΔH°/T²\n3. Differentiate given ΔG°\n4. ΔH° = a - bT + 2cT",
+      "correctOption": 2
+    },
+    {
+      "id": "MATH115",
+      "subject": "Mathematics",
+      "level": 120,
+      "question": "The number of real values of k for which the equation |x² - 4| + |x - k| = 4 has exactly three solutions is:",
+      "options": ["2", "4", "6", "8"],
+      "hint": "Break into cases based on absolute value conditions",
+      "solution": "1. Consider cases: x² > 4 and x² < 4\n2. Also x > k and x < k\n3. Graph intersections give solutions\n4. k has 4 possible values",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY117",
+      "subject": "Physics",
+      "level": 121,
+      "question": "A particle of mass m and charge q is released from rest in a region with uniform electric field E and magnetic field B perpendicular to E. The maximum speed attained by the particle is:",
+      "options": ["E/B", "2E/B", "qE/mB", "qE/2mB"],
+      "hint": "Consider force balance and energy conservation",
+      "solution": "1. Initially a = qE/m\n2. As v increases, magnetic force increases\n3. Maximum speed when qE = qvB\n4. v_max = E/B",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM117",
+      "subject": "Chemistry",
+      "level": 122,
+      "question": "In a galvanic cell Zn|Zn²⁺(a₁)||Zn²⁺(a₂)|Zn, if activity ratio a₂/a₁ = e², the cell potential at 298K is:",
+      "options": ["0.0257 V", "0.0514 V", "0.0771 V", "0.1028 V"],
+      "hint": "Use Nernst equation with concentration cell",
+      "solution": "1. E = (RT/nF)ln(a₂/a₁)\n2. n = 2 for Zn²⁺\n3. At 298K, RT/F = 0.0257V\n4. E = 0.0514V",
+      "correctOption": 1
+    },
+    {
+      "id": "MATH117",
+      "subject": "Mathematics",
+      "level": 123,
+      "question": "If f(x) is continuous on [0,1] and f(x) = ∫[0 to x]f(t)dt + x², then f(1) equals:",
+      "options": ["e", "e²", "2e", "e/2"],
+      "hint": "Differentiate both sides and solve resulting differential equation",
+      "solution": "1. f'(x) = f(x) + 2x\n2. Multiply by e^(-x)\n3. d/dx(f(x)e^(-x)) = 2xe^(-x)\n4. f(1) = e",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY119",
+      "subject": "Physics",
+      "level": 124,
+      "question": "A thin spherical shell of radius R and surface charge density σ is expanding with velocity v. The magnetic field at distance r (r>R) from the center is:",
+      "options": ["μ₀σvR²/3r²", "μ₀σvR²/2r²", "μ₀σvR²/4r²", "μ₀σvR²/6r²"],
+      "hint": "Use Biot-Savart law and consider current due to expanding charge",
+      "solution": "1. Current element: dI = σv(2πR sinθ)Rdθ\n2. Use Biot-Savart law\n3. Integrate over θ from 0 to π\n4. B = μ₀σvR²/3r²",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH117",
+      "subject": "Mathematics",
+      "level": 125,
+      "question": "If f(x) is continuous on [0,1] and f(x) = ∫[0 to x]f(t)dt + x², then f(1) equals:",
+      "options": ["e", "e²", "2e", "e/2"],
+      "hint": "Differentiate both sides and solve resulting differential equation",
+      "solution": "1. f'(x) = f(x) + 2x\n2. Multiply by e^(-x)\n3. d/dx(f(x)e^(-x)) = 2xe^(-x)\n4. f(1) = e",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY119",
+      "subject": "Physics",
+      "level": 126,
+      "question": "A thin spherical shell of radius R and surface charge density σ is expanding with velocity v. The magnetic field at distance r (r>R) from the center is:",
+      "options": ["μ₀σvR²/3r²", "μ₀σvR²/2r²", "μ₀σvR²/4r²", "μ₀σvR²/6r²"],
+      "hint": "Use Biot-Savart law and consider current due to expanding charge",
+      "solution": "1. Current element: dI = σv(2πR sinθ)Rdθ\n2. Use Biot-Savart law\n3. Integrate over θ from 0 to π\n4. B = μ₀σvR²/3r²",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM120",
+      "subject": "Chemistry",
+      "level": 127,
+      "question": "For a reaction A ⇌ B + C, the equilibrium constant Kc = 4 at 300K. If initial concentration of A is 1M and B and C are zero, the equilibrium concentration of B will be:",
+      "options": ["0.8M", "0.5M", "0.4M", "0.2M"],
+      "hint": "Use ICE table and quadratic equation",
+      "solution": "1. Let x be the concentration of B and C at equilibrium\n2. [A]eq = 1-x\n3. Kc = x²/(1-x) = 4\n4. Solve quadratic: x² + 4x - 4 = 0\n5. x = 0.8M",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH121",
+      "subject": "Mathematics",
+      "level": 128,
+      "question": "The area bounded by the curve |x| + |y| = 2 is:",
+      "options": ["8", "4", "6", "10"],
+      "hint": "Break into regions and use double integration",
+      "solution": "1. Curve forms a rhombus\n2. Break into four triangles\n3. Area = 8 square units",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY122",
+      "subject": "Physics",
+      "level": 129,
+      "question": "A particle executes simple harmonic motion with amplitude A. The time taken by the particle to go from x = A/2 to x = A/√2 is: (where T is the time period)",
+      "options": ["T/12", "T/6", "T/8", "T/4"],
+      "hint": "Use SHM equations and time integral",
+      "solution": "1. x = A cos(ωt)\n2. t = (1/ω)[cos⁻¹(1/√2) - cos⁻¹(1/2)]\n3. = T/12",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM123",
+      "subject": "Chemistry",
+      "level": 130,
+      "question": "The pH of a buffer solution prepared by mixing 0.2M CH₃COOH and 0.1M CH₃COONa, given Ka = 1.8 × 10⁻⁵ is:",
+      "options": ["4.54", "4.74", "4.34", "4.94"],
+      "hint": "Use Henderson-Hasselbalch equation",
+      "solution": "1. pH = pKa + log([salt]/[acid])\n2. pKa = -log(1.8 × 10⁻⁵)\n3. pH = 4.74",
+      "correctOption": 1
+    },
+    {
+      "id": "MATH124",
+      "subject": "Mathematics",
+      "level": 131,
+      "question": "If z₁ and z₂ are complex numbers such that |z₁| = |z₂| = 1 and arg(z₁) + arg(z₂) = π/2, then the value of |z₁ + z₂| is:",
+      "options": ["√2", "1", "2", "0"],
+      "hint": "Use geometric interpretation and vector addition",
+      "solution": "1. Plot points on unit circle\n2. Use parallelogram law\n3. |z₁ + z₂| = √(2 + 2cos(π/2))\n4. = √2",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY125",
+      "subject": "Physics",
+      "level": 132,
+      "question": "A cylindrical wire of length L and radius r is stretched to length 2L. If volume remains constant and resistivity changes by factor α due to strain, the new resistance R' in terms of initial resistance R is:",
+      "options": ["4αR", "2αR", "α²R", "αR"],
+      "hint": "Use volume conservation and resistance formula",
+      "solution": "1. Volume conservation: πr₁²L = πr₂²(2L)\n2. r₂ = r₁/√2\n3. R' = α(ρL'/A')\n4. R' = 4αR",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM126",
+      "subject": "Chemistry",
+      "level": 133,
+      "question": "For the reaction N₂O₄ ⇌ 2NO₂, ΔH = 57.2 kJ/mol, ΔS = 176 J/K·mol. The temperature at which Kp = 1 atm is:",
+      "options": ["325K", "298K", "350K", "375K"],
+      "hint": "Use ΔG = -RTlnK and ΔG = ΔH - TΔS",
+      "solution": "1. At equilibrium, ΔG = 0\n2. ΔH = TΔS\n3. T = ΔH/ΔS\n4. T = 325K",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH127",
+      "subject": "Mathematics",
+      "level": 134,
+      "question": "The sum of the series ∑(n=1 to ∞) n/(2ⁿ⁺¹) equals:",
+      "options": ["2", "1", "3", "4"],
+      "hint": "Consider the derivative of geometric series",
+      "solution": "1. Let S = ∑(n=1 to ∞) x^n\n2. xS' = ∑(n=1 to ∞) nx^n\n3. Put x = 1/2\n4. Result = 2",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY128",
+      "subject": "Physics",
+      "level": 135,
+      "question": "A particle moves in a circle of radius R with angular velocity ω. If its velocity vector makes an angle θ with the radius vector, then the magnitude of acceleration is:",
+      "options": [
+        "Rω²√(1 + 3cos²θ)",
+        "Rω²√(1 + cos²θ)",
+        "Rω²√(2 + cos²θ)",
+        "Rω²√(4 + cos²θ)"
+      ],
+      "hint": "Consider both radial and tangential components of acceleration",
+      "solution": "1. Radial acceleration = Rω²cosθ\n2. Tangential acceleration = Rω²sinθ\n3. Total acceleration = √(R²ω⁴cos²θ + R²ω⁴sin²θ)\n4. = Rω²√(1 + 3cos²θ)",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM129",
+      "subject": "Chemistry",
+      "level": 136,
+      "question": "For a first order reaction, time taken for 75% completion is 60 minutes. The time taken for 87.5% completion will be:",
+      "options": ["90 minutes", "120 minutes", "45 minutes", "30 minutes"],
+      "hint": "Use integrated rate equation and ratio method",
+      "solution": "1. t₇₅ = (ln 4)/k = 60\n2. t₈₇.₅ = (ln 8)/k\n3. Ratio = ln 8/ln 4 = 1.5\n4. t₈₇.₅ = 90 minutes",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH130",
+      "subject": "Mathematics",
+      "level": 137,
+      "question": "If vectors a, b, c form a right-handed system and |a| = 3, |b| = 4, |c| = 5, and a·b = 6, b·c = 8, c·a = 10, then |a × b + b × c + c × a| equals:",
+      "options": ["60", "30", "40", "50"],
+      "hint": "Use vector triple product and given scalar products",
+      "solution": "1. (a × b + b × c + c × a)² = (a × b)² + (b × c)² + (c × a)² + 2[(a × b)·(b × c) + (b × c)·(c × a) + (c × a)·(a × b)]\n2. Use scalar triple product properties\n3. Substitute values\n4. Result = 60",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY131",
+      "subject": "Physics",
+      "level": 138,
+      "question": "A particle of mass m and charge q moves in a uniform magnetic field B with velocity v perpendicular to B. If its de Broglie wavelength is λ, then the radius of its circular path is:",
+      "options": ["hB/2πqmv", "h/2πqB", "h/qB", "hv/qB"],
+      "hint": "Combine de Broglie relation with magnetic force equation",
+      "solution": "1. mv = h/λ\n2. qvB = mv²/r\n3. Substitute and solve\n4. r = h/2πqB",
+      "correctOption": 1
+    },
+    {
+      "id": "CHEM132",
+      "subject": "Chemistry",
+      "level": 139,
+      "question": "The hybridization of central atom in XeF₄ and its shape is:",
+      "options": [
+        "sp³d² and square planar",
+        "sp³d and tetrahedral",
+        "sp³d² and see-saw",
+        "sp³ and square pyramidal"
+      ],
+      "hint": "Apply VSEPR theory and consider lone pairs",
+      "solution": "1. Xe has 8 valence electrons\n2. Forms 4 bonds with F\n3. Has 2 lone pairs\n4. sp³d² hybridization with square planar geometry",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH133",
+      "subject": "Mathematics",
+      "level": 140,
+      "question": "If f(x) = x³ - 3x² + 4 and g(x) = 2x² - 5x + 3, then the number of solutions of f(g(x)) = g(f(x)) in interval [0,1] is:",
+      "options": ["3", "2", "1", "4"],
+      "hint": "Form equation and use Rolle's theorem",
+      "solution": "1. f(g(x)) - g(f(x)) = 0\n2. This is a polynomial equation\n3. Apply Rolle's theorem\n4. There are 3 solutions in [0,1]",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY134",
+      "subject": "Physics",
+      "level": 141,
+      "question": "A thermally insulated cylinder contains an ideal gas at pressure P₁ and volume V₁. If the gas expands adiabatically against a constant external pressure P₂ = P₁/4 until equilibrium, the final volume V₂/V₁ equals (γ = 5/3):",
+      "options": ["2", "4", "3", "5/3"],
+      "hint": "Use work-energy theorem and adiabatic equation",
+      "solution": "1. P₁V₁γ = P₂V₂γ\n2. Work done = P₂(V₂-V₁)\n3. Change in internal energy = -work done\n4. V₂/V₁ = 2",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM135",
+      "subject": "Chemistry",
+      "level": 142,
+      "question": "In the electrolysis of aqueous CuSO₄ using copper electrodes, the mass of copper deposited at cathode is 6.35g. The change in concentration of CuSO₄ solution is: (Atomic mass of Cu = 63.5)",
+      "options": ["0.1M", "0.2M", "0.05M", "0.15M"],
+      "hint": "Consider both electrode reactions",
+      "solution": "1. At cathode: Cu²⁺ + 2e⁻ → Cu\n2. At anode: Cu → Cu²⁺ + 2e⁻\n3. Net change in Cu²⁺ = 0.1 moles\n4. Concentration change = 0.1M",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH136",
+      "subject": "Mathematics",
+      "level": 143,
+      "question": "If a + b + c = 0 and a², b², c² = 6, then the value of abc is:",
+      "options": ["-2", "2", "0", "4"],
+      "hint": "Use Newton's identities for symmetric functions",
+      "solution": "1. Let e₁ = a + b + c = 0\n2. e₂ = ab + bc + ca\n3. e₃ = abc\n4. Use relations to find abc = -2",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY137",
+      "subject": "Physics",
+      "level": 144,
+      "question": "A wire of length L carries current I. It is bent into a circular arc of radius R subtending angle θ at center. The magnetic field at the center is:",
+      "options": [
+        "(μ₀Iθ)/(4πR)",
+        "(μ₀IL)/(4πR²)",
+        "(μ₀I)/(4πR)",
+        "(μ₀Iθ)/(2πR)"
+      ],
+      "hint": "Use Biot-Savart law and integrate",
+      "solution": "1. dB = (μ₀IdL × r)/(4πr³)\n2. Integrate over arc length\n3. All elements contribute equally\n4. B = (μ₀Iθ)/(4πR)",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM138",
+      "subject": "Chemistry",
+      "level": 145,
+      "question": "The number of geometrical isomers possible for complex [Pt(NH₃)₂Cl₂] is:",
+      "options": ["2", "3", "4", "1"],
+      "hint": "Consider square planar geometry and ligand positions",
+      "solution": "1. Pt forms square planar complexes\n2. NH₃ and Cl are different ligands\n3. Can be arranged as cis and trans\n4. 2 geometrical isomers possible",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH139",
+      "subject": "Mathematics",
+      "level": 146,
+      "question": "If x + 1/x = 2, then the value of x⁷ + 1/x⁷ is:",
+      "options": ["2", "7", "14", "8"],
+      "hint": "Use Chebyshev polynomials",
+      "solution": "1. Let y = x + 1/x\n2. x² + 1/x² = y² - 2\n3. Continue pattern\n4. x⁷ + 1/x⁷ = 2",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY140",
+      "subject": "Physics",
+      "level": 147,
+      "question": "In Young's double slit experiment, if the separation between slits is doubled and the screen distance is halved, the fringe width will:",
+      "options": ["Remain same", "Double", "Become half", "Become one-fourth"],
+      "hint": "Use fringe width formula β = λD/d",
+      "solution": "1. Initial fringe width β₁ = λD/d\n2. Final fringe width β₂ = λ(D/2)/(2d)\n3. β₂ = β₁/4\n4. Fringe width becomes one-fourth",
+      "correctOption": 3
+    },
+    {
+      "id": "CHEM141",
+      "subject": "Chemistry",
+      "level": 148,
+      "question": "For the reaction PCl₅ ⇌ PCl₃ + Cl₂, if α is degree of dissociation at pressure P and 4α at pressure P/4, then value of α is:",
+      "options": ["0.2", "0.4", "0.6", "0.8"],
+      "hint": "Use pressure dependence of equilibrium constant",
+      "solution": "1. Kp = P(α²)/(1-α²)\n2. At P/4: Kp = (P/4)(16α²)/(1-16α²)\n3. Equate and solve\n4. α = 0.2",
+      "correctOption": 0
+    },
+    {
+      "id": "MATH142",
+      "subject": "Mathematics",
+      "level": 149,
+      "question": "The area bounded by the curves |x| + |y| = 1 and xy = 0 is:",
+      "options": ["1", "2", "3", "4"],
+      "hint": "Break into regions and use coordinate geometry",
+      "solution": "1. Second curve represents coordinate axes\n2. First curve is a rhombus\n3. Area = sum of triangles\n4. Total area = 1 square unit",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY143",
+      "subject": "Physics",
+      "level": 150,
+      "question": "A particle executes simple harmonic motion such that its displacement is given by x = Asin(ωt). If E is its total energy, then its kinetic energy at displacement x is:",
+      "options": ["E(1-x²/A²)", "Ex²/A²", "E(1+x²/A²)", "E(1-x/A)"],
+      "hint": "Use energy conservation and SHM equations",
+      "solution": "1. Total energy E = ½kA²\n2. PE = ½kx²\n3. KE = E - PE\n4. KE = E(1-x²/A²)",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM144",
+      "subject": "Chemistry",
+      "level": 151,
+      "question": "The equilibrium constant for the reaction N₂ + 3H₂ ⇌ 2NH₃ is K. If α is the degree of dissociation of NH₃ at equilibrium, then K equals:",
+      "options": [
+        "(1-α)²/27α³P²",
+        "(1-α)²/4α³P²",
+        "(1-α)²/9α³P²",
+        "(1-α)²/α³P²"
+      ],
+      "hint": "Use partial pressures and equilibrium expressions",
+      "solution": "1. Write pressures in terms of α\n2. Total pressure = P\n3. Apply equilibrium constant expression\n4. K = (1-α)²/27α³P²",
+      "correctOption": 0
     }
   ]
 }

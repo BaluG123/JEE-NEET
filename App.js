@@ -10,6 +10,8 @@ import NeetLevelsScreen from './src/screens/NeetlevelsScreen';
 import JeeLevelsScreen from './src/screens/JeelevelsScreen';
 import questionsData from './src/util/JEE.json';
 import QuestionScreen from './src/screens/QuestionScreen';
+import {Text, TouchableOpacity} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Stack = createStackNavigator();
 
@@ -69,15 +71,23 @@ export default function App() {
           name="JeeLevels"
           component={JeeLevelsScreen}
           initialParams={{questions: questionsData.questions}}
-          options={{title: 'JEE Levels'}}
+          options={({navigation}) => ({
+            title: 'JEE Levels',
+            headerLeft: () => (
+              <TouchableOpacity
+                onPress={() => navigation.navigate('Home')}
+                style={{paddingLeft: 5}}>
+                <Icon name="arrow-left" size={24} color="#fff" />
+                {/* <Text style={{color: '#ffffff', fontSize: 18}}>Back</Text> */}
+              </TouchableOpacity>
+            ),
+          })}
         />
         {/* <Stack.Screen
-          name="JEELevelsScreen"
-          component={JeelevelsScreen}
-          options={{
-            title: 'JEE Practice Quiz',
-            headerTransparent: false,
-          }}
+          name="JeeLevels"
+          component={JeeLevelsScreen}
+          initialParams={{questions: questionsData.questions}}
+          options={{title: 'JEE Levels'}}
         /> */}
         <Stack.Screen
           name="NEETLevelsScreen"

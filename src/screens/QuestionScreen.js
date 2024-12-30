@@ -161,6 +161,10 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import LottieView from 'lottie-react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {StorageService} from '../util/Storage';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
 
 const {width} = Dimensions.get('window');
 
@@ -297,44 +301,49 @@ const QuestionScreen = ({route, navigation}) => {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* Level Header */}
       <View style={styles.levelHeader}>
         <Text style={styles.levelText}>Level {level}</Text>
         <View style={styles.subjectContainer}>
-          <Icon name="book-open-variant" size={20} color="#4CAF50" />
+          <Icon name="book-open-variant" size={wp('5%')} color="#4CAF50" />
           <Text style={styles.subjectText}>{currentQuestion.subject}</Text>
         </View>
       </View>
 
       <View style={styles.questionContainer}>
-        <Text style={styles.questionText}>{currentQuestion.question}</Text>
+        <View style={styles.contentWrapper}>
+          <Text style={styles.questionText}>{currentQuestion.question}</Text>
 
-        <View style={styles.optionsContainer}>
-          {currentQuestion.options.map((option, index) => (
-            <TouchableOpacity
-              key={index}
-              style={styles.optionButton}
-              onPress={() => handleAnswer(index)}>
-              <Text style={styles.optionIndex}>
-                {String.fromCharCode(65 + index)}
-              </Text>
-              <Text style={styles.optionText}>{option}</Text>
-            </TouchableOpacity>
-          ))}
+          <View style={styles.optionsContainer}>
+            {currentQuestion.options.map((option, index) => (
+              <TouchableOpacity
+                key={index}
+                style={styles.optionButton}
+                onPress={() => handleAnswer(index)}>
+                <Text style={styles.optionIndex}>
+                  {String.fromCharCode(65 + index)}
+                </Text>
+                <Text style={styles.optionText}>{option}</Text>
+              </TouchableOpacity>
+            ))}
+          </View>
         </View>
 
         <View style={styles.bottomButtons}>
           <TouchableOpacity
             style={styles.iconButton}
             onPress={() => setShowHintModal(true)}>
-            <Icon name="lightbulb-outline" size={24} color="#FFC107" />
+            <Icon name="lightbulb-outline" size={wp('6%')} color="#FFC107" />
             <Text style={styles.iconButtonText}>Hint</Text>
           </TouchableOpacity>
 
           <TouchableOpacity
             style={styles.iconButton}
             onPress={() => setShowSolutionModal(true)}>
-            <Icon name="book-open-page-variant" size={24} color="#2196F3" />
+            <Icon
+              name="book-open-page-variant"
+              size={wp('6%')}
+              color="#2196F3"
+            />
             <Text style={styles.iconButtonText}>Solution</Text>
           </TouchableOpacity>
         </View>
@@ -370,77 +379,102 @@ const styles = StyleSheet.create({
     backgroundColor: '#1a1a1a',
   },
   levelHeader: {
-    padding: 16,
+    padding: wp('4%'),
     backgroundColor: '#222',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     borderBottomWidth: 1,
     borderBottomColor: '#333',
+    height: hp('8%'),
   },
   levelText: {
     color: '#fff',
-    fontSize: 20,
+    fontSize: wp('5%'),
     fontWeight: 'bold',
   },
   subjectContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: wp('2%'),
   },
   questionContainer: {
     flex: 1,
-    padding: 16,
-    justifyContent: 'space-between',
+    padding: wp('4%'),
+  },
+  contentWrapper: {
+    flex: 1,
+    justifyContent: 'center',
+    paddingBottom: hp('10%'), // Space for bottom buttons
   },
   subjectText: {
     color: '#4CAF50',
-    fontSize: 16,
+    fontSize: wp('4%'),
     fontWeight: 'bold',
   },
   questionText: {
     color: 'white',
-    fontSize: 18,
-    lineHeight: 26,
-    marginVertical: 24,
+    fontSize: wp('4.5%'),
+    lineHeight: hp('3.5%'),
+    marginBottom: hp('4%'),
   },
   optionsContainer: {
-    gap: 12,
+    width: '100%',
+    gap: hp('2%'),
   },
   optionButton: {
     backgroundColor: '#333',
-    padding: 16,
-    borderRadius: 12,
+    padding: wp('4%'),
+    borderRadius: wp('3%'),
     borderWidth: 1,
     borderColor: '#444',
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 12,
+    gap: wp('3%'),
+    minHeight: hp('7%'), // Reduced height
+    elevation: 2, // For Android shadow
+    shadowColor: '#000', // For iOS shadow
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.22,
+    shadowRadius: 2.22,
   },
   optionIndex: {
     color: '#4CAF50',
-    fontSize: 16,
+    fontSize: wp('4%'),
     fontWeight: 'bold',
-    width: 24,
+    width: wp('6%'),
   },
   optionText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: wp('4%'),
     flex: 1,
+    paddingRight: wp('2%'),
   },
   bottomButtons: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    marginTop: 32,
-    paddingBottom: 16,
+    paddingVertical: hp('2%'),
+    backgroundColor: '#1a1a1a',
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    borderTopWidth: 1,
+    borderTopColor: '#333',
   },
   iconButton: {
     alignItems: 'center',
-    gap: 4,
+    paddingHorizontal: wp('4%'),
+    paddingVertical: hp('1%'),
+    flexDirection: 'row',
+    gap: wp('2%'),
   },
   iconButtonText: {
     color: 'white',
-    fontSize: 14,
+    fontSize: wp('3.5%'),
   },
   modalOverlay: {
     flex: 1,
@@ -450,24 +484,28 @@ const styles = StyleSheet.create({
   },
   modalContent: {
     backgroundColor: '#333',
-    borderRadius: 16,
-    padding: 24,
+    borderRadius: wp('4%'),
+    padding: wp('6%'),
     alignItems: 'center',
-    width: width * 0.8,
+    width: wp('80%'),
+    maxWidth: 400, // Add maximum width
   },
   lottieAnimation: {
-    width: 150,
-    height: 150,
+    width: wp('35%'),
+    height: wp('35%'),
+    maxWidth: 200, // Add maximum width
+    maxHeight: 200, // Add maximum height
   },
   loadingAnimation: {
-    width: 200,
-    height: 200,
+    width: wp('40%'),
+    height: wp('40%'),
   },
   modalText: {
     color: 'white',
-    fontSize: 20,
+    fontSize: wp('5%'),
     fontWeight: 'bold',
-    marginTop: 16,
+    marginTop: hp('2%'),
+    textAlign: 'center',
   },
   solutionModalOverlay: {
     flex: 1,
@@ -476,34 +514,34 @@ const styles = StyleSheet.create({
   },
   solutionModalContent: {
     backgroundColor: '#333',
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-    padding: 24,
-    maxHeight: '80%',
+    borderTopLeftRadius: wp('5%'),
+    borderTopRightRadius: wp('5%'),
+    padding: wp('6%'),
+    maxHeight: hp('70%'),
   },
   solutionHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: 16,
+    marginBottom: hp('2%'),
   },
   solutionTitle: {
     color: 'white',
-    fontSize: 20,
+    fontSize: wp('5%'),
     fontWeight: 'bold',
   },
   closeButton: {
-    padding: 4,
+    padding: wp('2%'),
   },
   solutionText: {
     color: 'white',
-    fontSize: 16,
-    lineHeight: 24,
+    fontSize: wp('4%'),
+    lineHeight: hp('3%'),
   },
   errorText: {
     color: 'white',
     textAlign: 'center',
-    fontSize: 16,
+    fontSize: wp('4%'),
   },
 });
 
