@@ -200,7 +200,7 @@ const QuestionScreen = ({route, navigation}) => {
       setTimeout(() => {
         setShowSuccessModal(false);
         navigation.replace('JeeLevels');
-      }, 2000);
+      }, 1500);
     } else {
       setShowErrorModal(true);
       // Auto close error modal after 1.5 seconds

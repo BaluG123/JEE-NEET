@@ -12,6 +12,7 @@ import questionsData from './src/util/JEE.json';
 import QuestionScreen from './src/screens/QuestionScreen';
 import {Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import JEEAdvancedSyllabus from './src/screens/JEEAdvancedSyllabus';
 
 const Stack = createStackNavigator();
 
@@ -55,7 +56,7 @@ export default function App() {
           name="JEEScreen"
           component={JEEScreen}
           options={{
-            title: 'JEE Preparation',
+            title: 'JEE Mains Syllabus',
             headerTransparent: true,
           }}
         />
@@ -78,7 +79,6 @@ export default function App() {
                 onPress={() => navigation.navigate('Home')}
                 style={{paddingLeft: 5}}>
                 <Icon name="arrow-left" size={24} color="#fff" />
-                {/* <Text style={{color: '#ffffff', fontSize: 18}}>Back</Text> */}
               </TouchableOpacity>
             ),
           })}
@@ -89,18 +89,23 @@ export default function App() {
           initialParams={{questions: questionsData.questions}}
           options={{title: 'JEE Levels'}}
         /> */}
-        <Stack.Screen
+        {/* <Stack.Screen
           name="NEETLevelsScreen"
           component={NeetLevelsScreen}
           options={{
             title: 'NEET Practice Quiz',
             headerTransparent: false,
           }}
-        />
+        /> */}
         <Stack.Screen
           name="Question"
           component={QuestionScreen}
           options={{title: 'Question'}}
+        />
+        <Stack.Screen
+          name="JeeadvancedSyllabus"
+          component={JEEAdvancedSyllabus}
+          options={{title: 'JEE Advanced Syllabus'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
