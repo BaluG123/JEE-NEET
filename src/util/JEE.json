@@ -1584,6 +1584,391 @@
       "hint": "Use partial pressures and equilibrium expressions",
       "solution": "1. Write pressures in terms of α\n2. Total pressure = P\n3. Apply equilibrium constant expression\n4. K = (1-α)²/27α³P²",
       "correctOption": 0
+    },
+    {
+      "id": "PHY152",
+      "subject": "Physics",
+      "level": 152,
+      "question": "A block of mass m is attached to a spring with spring constant k and is undergoing simple harmonic motion. If the amplitude of oscillation is A, what is the maximum kinetic energy of the block?",
+      "options": ["½kA²", "½mA²", "½kA", "½mA"],
+      "hint": "Use the relationship between potential energy and kinetic energy in SHM.",
+      "solution": "The maximum kinetic energy is equal to the total energy, which is ½kA².",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY153",
+      "subject": "Physics",
+      "level": 153,
+      "question": "A particle of mass m is moving in a circular path of radius r with a constant speed v. What is the centripetal force acting on the particle?",
+      "options": ["mv²/r", "mv/r²", "m²v/r", "m²v²/r²"],
+      "hint": "Use the formula for centripetal force.",
+      "solution": "The centripetal force is given by F = mv²/r.",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM152",
+      "subject": "Chemistry",
+      "level": 154,
+      "question": "For the reaction 2SO₂ + O₂ ⇌ 2SO₃, the equilibrium constant Kc is given. If the initial concentrations of SO₂ and O₂ are both 1 M and the equilibrium concentration of SO₃ is 0.5 M, what is the value of Kc?",
+      "options": ["1", "2", "4", "0.5"],
+      "hint": "Use the equilibrium expression for Kc.",
+      "solution": "Kc = [SO₃]² / ([SO₂]²[O₂]) = (0.5)² / ((1-0.5)² * (1-0.25)) = 4.",
+      "correctOption": 2
+    },
+    {
+      "id": "CHEM153",
+      "subject": "Chemistry",
+      "level": 155,
+      "question": "The dissociation constant Kd for the reaction AB ⇌ A + B is given. If the initial concentration of AB is 1 M and the degree of dissociation is α, what is the equilibrium concentration of A?",
+      "options": ["α", "1 - α", "α / (1 - α)", "1 / α"],
+      "hint": "Use the definition of the degree of dissociation.",
+      "solution": "The equilibrium concentration of A is α.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY154",
+      "subject": "Physics",
+      "level": 156,
+      "question": "A particle of mass m is projected with a velocity v at an angle θ with the horizontal. What is the maximum height reached by the particle?",
+      "options": ["v²sin²θ/2g", "v²sinθ/2g", "v²cos²θ/2g", "v²cosθ/2g"],
+      "hint": "Use the vertical component of the initial velocity.",
+      "solution": "The maximum height is given by H = v²sin²θ/2g.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY155",
+      "subject": "Physics",
+      "level": 157,
+      "question": "A block of mass m is placed on a frictionless inclined plane of angle θ. What is the acceleration of the block down the plane?",
+      "options": ["gcosθ", "gsinθ", "gtanθ", "g"],
+      "hint": "Use the component of gravitational force along the plane.",
+      "solution": "The acceleration is a = gsinθ.",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY156",
+      "subject": "Physics",
+      "level": 158,
+      "question": "A capacitor of capacitance C is charged to a potential difference V. What is the energy stored in the capacitor?",
+      "options": ["½CV²", "CV²", "½C²V", "C²V²"],
+      "hint": "Use the formula for energy stored in a capacitor.",
+      "solution": "The energy stored is U = ½CV².",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY157",
+      "subject": "Physics",
+      "level": 159,
+      "question": "A current I flows through a wire of length L and cross-sectional area A. What is the resistance of the wire if the resistivity of the material is ρ?",
+      "options": ["ρL/A", "ρA/L", "ρL²/A", "ρA²/L"],
+      "hint": "Use the formula for resistance in terms of resistivity.",
+      "solution": "The resistance is R = ρL/A.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY158",
+      "subject": "Physics",
+      "level": 160,
+      "question": "A light ray is incident on a plane mirror at an angle of 30°. What is the angle of reflection?",
+      "options": ["30°", "60°", "90°", "0°"],
+      "hint": "Use the law of reflection.",
+      "solution": "The angle of reflection is equal to the angle of incidence, which is 30°.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY159",
+      "subject": "Physics",
+      "level": 161,
+      "question": "A particle of mass m is moving with a velocity v. What is its kinetic energy?",
+      "options": ["½mv²", "mv²", "½mv", "mv"],
+      "hint": "Use the formula for kinetic energy.",
+      "solution": "The kinetic energy is KE = ½mv².",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY160",
+      "subject": "Physics",
+      "level": 162,
+      "question": "A spring with spring constant k is compressed by a distance x. What is the potential energy stored in the spring?",
+      "options": ["½kx²", "kx²", "½kx", "kx"],
+      "hint": "Use the formula for potential energy in a spring.",
+      "solution": "The potential energy is PE = ½kx².",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY161",
+      "subject": "Physics",
+      "level": 163,
+      "question": "A wave has a frequency f and wavelength λ. What is the speed of the wave?",
+      "options": ["fλ", "f/λ", "λ/f", "f²λ"],
+      "hint": "Use the relationship between speed, frequency, and wavelength.",
+      "solution": "The speed of the wave is v = fλ.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY162",
+      "subject": "Physics",
+      "level": 164,
+      "question": "A charge q is placed in an electric field E. What is the force experienced by the charge?",
+      "options": ["qE", "q/E", "E/q", "q²E"],
+      "hint": "Use the formula for electric force.",
+      "solution": "The force is F = qE.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY163",
+      "subject": "Physics",
+      "level": 165,
+      "question": "A particle of mass m is moving in a circular path of radius r with an angular velocity ω. What is the centripetal acceleration of the particle?",
+      "options": ["ω²r", "ωr²", "r/ω²", "r²/ω"],
+      "hint": "Use the formula for centripetal acceleration.",
+      "solution": "The centripetal acceleration is a = ω²r.",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM154",
+      "subject": "Chemistry",
+      "level": 166,
+      "question": "The rate constant k of a reaction is given. If the concentration of the reactant is doubled, what happens to the rate of the reaction?",
+      "options": ["Doubles", "Halves", "Quadruples", "Remains the same"],
+      "hint": "Use the rate law expression.",
+      "solution": "The rate of the reaction doubles.",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM155",
+      "subject": "Chemistry",
+      "level": 167,
+      "question": "The pH of a solution is 3. What is the concentration of hydrogen ions in the solution?",
+      "options": ["10⁻³ M", "10³ M", "10⁻⁶ M", "10⁶ M"],
+      "hint": "Use the definition of pH.",
+      "solution": "The concentration of hydrogen ions is 10⁻³ M.",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM156",
+      "subject": "Chemistry",
+      "level": 168,
+      "question": "The equilibrium constant Kc for the reaction A + B ⇌ C + D is given. If the initial concentrations of A and B are both 1 M and the equilibrium concentration of C is 0.5 M, what is the value of Kc?",
+      "options": ["1", "2", "4", "0.5"],
+      "hint": "Use the equilibrium expression for Kc.",
+      "solution": "Kc = [C][D] / [A][B] = (0.5)(0.5) / (1-0.5)(1-0.5) = 1.",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM157",
+      "subject": "Chemistry",
+      "level": 169,
+      "question": "The standard enthalpy change for the reaction A + B → C is ΔH. If the reaction is exothermic, what is the sign of ΔH?",
+      "options": ["Negative", "Positive", "Zero", "Cannot be determined"],
+      "hint": "Consider the definition of exothermic reactions.",
+      "solution": "The sign of ΔH is negative.",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM158",
+      "subject": "Chemistry",
+      "level": 170,
+      "question": "The molar mass of a gas is M. If the gas is at a temperature T and pressure P, what is the density of the gas?",
+      "options": ["PM/RT", "RT/PM", "P/RTM", "RTM/P"],
+      "hint": "Use the ideal gas law.",
+      "solution": "The density of the gas is ρ = PM/RT.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY164",
+      "subject": "Physics",
+      "level": 164,
+      "question": "A particle of mass m is moving with a velocity v. What is its momentum?",
+      "options": ["mv", "mv²", "½mv", "½mv²"],
+      "hint": "Use the formula for momentum.",
+      "solution": "The momentum is p = mv.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY165",
+      "subject": "Physics",
+      "level": 165,
+      "question": "A block of mass m is placed on a rough inclined plane of angle θ. What is the frictional force acting on the block if it is at rest?",
+      "options": ["mgsinθ", "mgcosθ", "μmgcosθ", "μmgsinθ"],
+      "hint": "Use the component of gravitational force along the plane and the coefficient of friction.",
+      "solution": "The frictional force is f = μmgcosθ.",
+      "correctOption": 2
+    },
+    {
+      "id": "PHY166",
+      "subject": "Physics",
+      "level": 166,
+      "question": "A capacitor of capacitance C is connected in series with a resistor of resistance R. What is the time constant of the circuit?",
+      "options": ["RC", "R/C", "C/R", "1/RC"],
+      "hint": "Use the formula for the time constant of an RC circuit.",
+      "solution": "The time constant is τ = RC.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY167",
+      "subject": "Physics",
+      "level": 167,
+      "question": "A light ray passes from air into water at an angle of incidence of 45°. What is the angle of refraction if the refractive index of water is 1.33?",
+      "options": ["32.1°", "45°", "60°", "90°"],
+      "hint": "Use Snell's law.",
+      "solution": "The angle of refraction is given by Snell's law: n₁sinθ₁ = n₂sinθ₂. Solving for θ₂ gives approximately 32.1°.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY168",
+      "subject": "Physics",
+      "level": 168,
+      "question": "A particle of mass m is moving in a circular path of radius r with a constant speed v. What is the angular momentum of the particle?",
+      "options": ["mvr", "mv/r", "mvr²", "mv²r"],
+      "hint": "Use the formula for angular momentum.",
+      "solution": "The angular momentum is L = mvr.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY169",
+      "subject": "Physics",
+      "level": 169,
+      "question": "A spring with spring constant k is stretched by a distance x. What is the restoring force exerted by the spring?",
+      "options": ["kx", "-kx", "½kx", "-½kx"],
+      "hint": "Use Hooke's law.",
+      "solution": "The restoring force is F = -kx.",
+      "correctOption": 1
+    },
+    {
+      "id": "PHY170",
+      "subject": "Physics",
+      "level": 170,
+      "question": "A wave has a frequency f and wavelength λ. What is the period of the wave?",
+      "options": ["1/f", "f/λ", "λ/f", "f²λ"],
+      "hint": "Use the relationship between period and frequency.",
+      "solution": "The period of the wave is T = 1/f.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY171",
+      "subject": "Physics",
+      "level": 171,
+      "question": "A charge q is placed in an electric field E. What is the electric potential energy of the charge?",
+      "options": ["qE", "q/E", "E/q", "qV"],
+      "hint": "Use the formula for electric potential energy.",
+      "solution": "The electric potential energy is U = qV.",
+      "correctOption": 3
+    },
+    {
+      "id": "PHY172",
+      "subject": "Physics",
+      "level": 172,
+      "question": "A particle of mass m is moving in a circular path of radius r with an angular velocity ω. What is the kinetic energy of the particle?",
+      "options": ["½mω²r²", "mω²r²", "½mωr²", "mωr²"],
+      "hint": "Use the formula for kinetic energy in terms of angular velocity.",
+      "solution": "The kinetic energy is KE = ½mω²r².",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY173",
+      "subject": "Physics",
+      "level": 173,
+      "question": "A block of mass m is placed on a frictionless horizontal surface and is connected to a spring with spring constant k. If the block is displaced by a distance x and released, what is the frequency of oscillation?",
+      "options": ["1/2π √(k/m)", "1/2π √(m/k)", "2π √(k/m)", "2π √(m/k)"],
+      "hint": "Use the formula for the frequency of a mass-spring system.",
+      "solution": "The frequency of oscillation is f = 1/2π √(k/m).",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM160",
+      "subject": "Chemistry",
+      "level": 174,
+      "question": "The rate constant k of a reaction is given. If the temperature is increased, what happens to the rate of the reaction?",
+      "options": [
+        "Increases",
+        "Decreases",
+        "Remains the same",
+        "Cannot be determined"
+      ],
+      "hint": "Consider the effect of temperature on reaction rate.",
+      "solution": "The rate of the reaction increases with temperature.",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM161",
+      "subject": "Chemistry",
+      "level": 175,
+      "question": "The pH of a solution is 7. What is the concentration of hydrogen ions in the solution?",
+      "options": ["10⁻⁷ M", "10⁷ M", "10⁻¹⁴ M", "10¹⁴ M"],
+      "hint": "Use the definition of pH.",
+      "solution": "The concentration of hydrogen ions is 10⁻⁷ M.",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM162",
+      "subject": "Chemistry",
+      "level": 176,
+      "question": "The equilibrium constant Kc for the reaction A + B ⇌ C + D is given. If the initial concentrations of A and B are both 2 M and the equilibrium concentration of C is 1 M, what is the value of Kc?",
+      "options": ["1", "2", "4", "0.5"],
+      "hint": "Use the equilibrium expression for Kc.",
+      "solution": "Kc = [C][D] / [A][B] = (1)(1) / (2-1)(2-1) = 1.",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM163",
+      "subject": "Chemistry",
+      "level": 177,
+      "question": "The standard enthalpy change for the reaction A + B → C is ΔH. If the reaction is endothermic, what is the sign of ΔH?",
+      "options": ["Positive", "Negative", "Zero", "Cannot be determined"],
+      "hint": "Consider the definition of endothermic reactions.",
+      "solution": "The sign of ΔH is positive.",
+      "correctOption": 0
+    },
+    {
+      "id": "CHEM164",
+      "subject": "Chemistry",
+      "level": 178,
+      "question": "The molar mass of a gas is M. If the gas is at a temperature T and pressure P, what is the volume of the gas?",
+      "options": ["RT/P", "P/RT", "RTM/P", "P/RTM"],
+      "hint": "Use the ideal gas law.",
+      "solution": "The volume of the gas is V = RT/P.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY174",
+      "subject": "Physics",
+      "level": 179,
+      "question": "A particle of mass m is moving with a velocity v in a straight line. What is the work done by the force to bring the particle to rest?",
+      "options": ["½mv²", "mv²", "½mv", "mv"],
+      "hint": "Use the work-energy theorem.",
+      "solution": "The work done is equal to the kinetic energy, which is ½mv².",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY175",
+      "subject": "Physics",
+      "level": 180,
+      "question": "A block of mass m is placed on a rough horizontal surface. If a force F is applied to the block at an angle θ with the horizontal, what is the normal force acting on the block?",
+      "options": ["mg - Fsinθ", "mg + Fcosθ", "mg - Fcosθ", "mg + Fsinθ"],
+      "hint": "Consider the vertical components of the forces.",
+      "solution": "The normal force is N = mg - Fsinθ.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY176",
+      "subject": "Physics",
+      "level": 181,
+      "question": "A capacitor of capacitance C is connected in parallel with another capacitor of capacitance 2C. What is the equivalent capacitance of the combination?",
+      "options": ["3C", "C/3", "2C", "C/2"],
+      "hint": "Use the formula for capacitors in parallel.",
+      "solution": "The equivalent capacitance is C_eq = C + 2C = 3C.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY177",
+      "subject": "Physics",
+      "level": 182,
+      "question": "A light ray passes from water into glass at an angle of incidence of 30°. What is the angle of refraction if the refractive index of glass is 1.5 and that of water is 1.33?",
+      "options": ["25.4°", "30°", "45°", "60°"],
+      "hint": "Use Snell's law.",
+      "solution": "The angle of refraction is given by Snell's law: n₁sinθ₁ = n₂sinθ₂. Solving for θ₂ gives approximately 25.4°.",
+      "correctOption": 0
     }
   ]
 }
