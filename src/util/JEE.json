@@ -1969,6 +1969,186 @@
       "hint": "Use Snell's law.",
       "solution": "The angle of refraction is given by Snell's law: n₁sinθ₁ = n₂sinθ₂. Solving for θ₂ gives approximately 25.4°.",
       "correctOption": 0
+    },
+    {
+      "id": "PHY178",
+      "subject": "Physics",
+      "level": 183,
+      "question": "A particle of mass m is moving in a circular path of radius r with an angular velocity ω. What is the angular frequency of the particle?",
+      "options": ["ω", "1/ω", "r/ω", "ω/r"],
+      "hint": "Use the definition of angular frequency.",
+      "solution": "The angular frequency is ω.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY179",
+      "subject": "Physics",
+      "level": 184,
+      "question": "A spring with spring constant k is stretched by a distance x. What is the potential energy stored in the spring?",
+      "options": ["½kx²", "kx²", "½kx", "kx"],
+      "hint": "Use the formula for potential energy in a spring.",
+      "solution": "The potential energy is PE = ½kx².",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY182",
+      "subject": "Physics",
+      "level": 185,
+      "question": "A particle of mass m is moving in a circular path of radius r with a constant speed v. What is the centripetal acceleration of the particle?",
+      "options": ["v²/r", "v/r²", "r/ω²", "r²/ω"],
+      "hint": "Use the formula for centripetal acceleration.",
+      "solution": "The centripetal acceleration is a = v²/r.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY183",
+      "subject": "Physics",
+      "level": 186,
+      "question": "What is the equivalent capacitance of two capacitors C₁ and C₂ connected in series?",
+      "options": ["1/(1/C₁ + 1/C₂)", "C₁ + C₂", "C₁C₂", "√(C₁C₂)"],
+      "hint": "Use the formula for series combination of capacitors.",
+      "solution": "For capacitors in series, the reciprocal of equivalent capacitance equals sum of reciprocals.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY184",
+      "subject": "Physics",
+      "level": 187,
+      "question": "A ray of light travels from air to glass. If the refractive index of glass is n, what is the critical angle for total internal reflection?",
+      "options": ["sin⁻¹(1/n)", "sin⁻¹(n)", "cos⁻¹(1/n)", "cos⁻¹(n)"],
+      "hint": "Critical angle occurs when refracted ray makes 90° with normal.",
+      "solution": "Critical angle (c) = sin⁻¹(1/n), where n is refractive index of denser medium.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY185",
+      "subject": "Physics",
+      "level": 188,
+      "question": "What is the momentum of a photon with wavelength λ?",
+      "options": ["h/λ", "hλ", "h/c", "hc/λ"],
+      "hint": "Use de Broglie's relation and remember that photons travel at speed c.",
+      "solution": "Photon momentum p = h/λ, where h is Planck's constant.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY186",
+      "subject": "Physics",
+      "level": 189,
+      "question": "In an LCR circuit at resonance, what is the phase difference between voltage and current?",
+      "options": ["0°", "90°", "180°", "45°"],
+      "hint": "At resonance, circuit behaves like pure resistor.",
+      "solution": "At resonance, voltage and current are in phase, so phase difference is 0°.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY187",
+      "subject": "Physics",
+      "level": 190,
+      "question": "What is the energy of an electron in nth orbit of hydrogen atom according to Bohr's model?",
+      "options": ["-13.6/n² eV", "-13.6n² eV", "13.6/n² eV", "13.6n² eV"],
+      "hint": "Use Bohr's energy equation for hydrogen atom.",
+      "solution": "Energy En = -13.6/n² eV, where n is principal quantum number.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY188",
+      "subject": "Physics",
+      "level": 191,
+      "question": "For a particle executing SHM, at what position is the kinetic energy equal to potential energy?",
+      "options": ["x = ±A/√2", "x = ±A/2", "x = ±A", "x = 0"],
+      "hint": "Consider energy distribution in SHM.",
+      "solution": "At x = ±A/√2, KE = PE = ¼kA², where A is amplitude.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY189",
+      "subject": "Physics",
+      "level": 192,
+      "question": "What is the magnetic field at the center of a current carrying circular loop of radius R carrying current I?",
+      "options": ["μ₀I/2R", "μ₀I/R", "2μ₀I/R", "μ₀I/4R"],
+      "hint": "Use Biot-Savart law for circular loop.",
+      "solution": "Magnetic field B = μ₀I/2R at center of circular current loop.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY190",
+      "subject": "Physics",
+      "level": 193,
+      "question": "What is the de Broglie wavelength of an electron accelerated through a potential difference V?",
+      "options": ["h/√(2meV)", "h√(2meV)", "h/2meV", "2h/√(2meV)"],
+      "hint": "Use de Broglie relation and energy conservation.",
+      "solution": "λ = h/√(2meV), where m is electron mass and e is electronic charge.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY191",
+      "subject": "Physics",
+      "level": 194,
+      "question": "What is the radius of nth Bohr orbit in hydrogen atom?",
+      "options": ["n²a₀", "na₀", "a₀/n", "a₀/n²"],
+      "hint": "Use Bohr's model for hydrogen atom.",
+      "solution": "Radius rn = n²a₀, where a₀ is Bohr radius.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY192",
+      "subject": "Physics",
+      "level": 195,
+      "question": "What is the work function of a metal if the stopping potential for photoelectrons is V₀ when light of frequency f is incident on it?",
+      "options": ["hf - eV₀", "hf + eV₀", "eV₀ - hf", "eV₀"],
+      "hint": "Use Einstein's photoelectric equation.",
+      "solution": "Work function φ = hf - eV₀, where h is Planck's constant.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY193",
+      "subject": "Physics",
+      "level": 196,
+      "question": "What is the total energy of a satellite orbiting Earth at height h above surface?",
+      "options": ["-GMm/2(R+h)", "GMm/2(R+h)", "-GMm/(R+h)", "GMm/(R+h)"],
+      "hint": "Use principle of conservation of energy for orbital motion.",
+      "solution": "Total energy E = -GMm/2(R+h), where R is Earth's radius.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY194",
+      "subject": "Physics",
+      "level": 197,
+      "question": "What is the mutual inductance between two coils if current changing at rate di/dt in one induces emf ε in other?",
+      "options": ["-ε/(di/dt)", "ε(di/dt)", "εdi/dt", "-εdi/dt"],
+      "hint": "Use Faraday's law of electromagnetic induction.",
+      "solution": "Mutual inductance M = -ε/(di/dt).",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY195",
+      "subject": "Physics",
+      "level": 198,
+      "question": "What is the angular momentum of electron in nth orbit of hydrogen atom according to Bohr's model?",
+      "options": ["nħ", "n²ħ", "ħ/n", "ħ/n²"],
+      "hint": "Use Bohr's quantization condition.",
+      "solution": "Angular momentum L = nħ, where ħ is reduced Planck's constant.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY196",
+      "subject": "Physics",
+      "level": 199,
+      "question": "What is the electric field at a distance r from an infinite line charge of linear charge density λ?",
+      "options": ["λ/2πε₀r", "λ/4πε₀r", "2λ/πε₀r", "λ/πε₀r"],
+      "hint": "Use Gauss's law for infinite line charge.",
+      "solution": "Electric field E = λ/2πε₀r, where ε₀ is permittivity of free space.",
+      "correctOption": 0
+    },
+    {
+      "id": "PHY197",
+      "subject": "Physics",
+      "level": 200,
+      "question": "In Young's double slit experiment, what is the fringe width if wavelength is λ, distance of screen is D, and slit separation is d?",
+      "options": ["λD/d", "λd/D", "λD/2d", "2λD/d"],
+      "hint": "Use the formula for fringe width in Young's experiment.",
+      "solution": "Fringe width β = λD/d for small angle approximation.",
+      "correctOption": 0
     }
   ]
 }
