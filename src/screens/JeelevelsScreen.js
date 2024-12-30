@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
   View,
   Text,
@@ -6,46 +6,70 @@ import {
   TouchableOpacity,
   StyleSheet,
 } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import LinearGradient from 'react-native-linear-gradient';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
-import { useNavigation } from '@react-navigation/native';
+import {useFocusEffect, useNavigation} from '@react-navigation/native';
+import {StorageService} from '../util/Storage';
 
-const JeeLevelsScreen = () => {
+const JeeLevelsScreen = ({route}) => {
   const navigation = useNavigation();
+  const {questions} = route.params;
+  // const totalLevels = Math.max(...questions.map(q => q.level));
   const totalLevels = 200;
   const columns = 5;
+  const [completedLevels, setCompletedLevels] = useState([]);
 
-  const handleLevelPress = (level) => {
-    // Navigate to level detail screen or game screen
-    // navigation.navigate('LevelDetail', { level });
-    console.log(`Level ${level} pressed`);
+  useFocusEffect(
+    React.useCallback(() => {
+      loadProgress();
+    }, []),
+  );
+
+  const loadProgress = async () => {
+    const completed = await StorageService.getCompletedLevels();
+    setCompletedLevels(completed);
   };
 
-  const renderLevel = (level) => {
-    // Determine if level is locked (you can modify this logic based on your game state)
-    const isLocked = level > 1; // For demo, only level 1 is unlocked
+  const handleLevelPress = level => {
+    navigation.navigate('Question', {
+      level,
+      questions,
+    });
+  };
+
+  const isLevelLocked = level => {
+    if (level === 1) return false;
+    return !completedLevels.includes(level - 1);
+  };
+
+  const renderLevel = level => {
+    const isLocked = isLevelLocked(level);
+    const isCompleted = completedLevels.includes(level);
 
     return (
       <TouchableOpacity
         key={level}
         onPress={() => handleLevelPress(level)}
         style={styles.levelButton}
-        disabled={isLocked}
-      >
+        disabled={isLocked}>
         <LinearGradient
-          colors={isLocked ? ['#666', '#444'] : ['#4CAF50', '#45a049']}
-          style={styles.levelGradient}
-        >
+          colors={
+            isCompleted
+              ? ['#4CAF50', '#45a049']
+              : isLocked
+              ? ['#666', '#444']
+              : ['#2196F3', '#1976D2']
+          }
+          style={styles.levelGradient}>
           <Text style={[styles.levelText, isLocked && styles.lockedText]}>
             {level}
           </Text>
-          {isLocked && (
-            <Text style={styles.lockIcon}>🔒</Text>
-          )}
+          {isLocked && <Text style={styles.lockIcon}>🔒</Text>}
+          {isCompleted && <Text style={styles.completedIcon}>✓</Text>}
         </LinearGradient>
       </TouchableOpacity>
     );
@@ -66,7 +90,7 @@ const JeeLevelsScreen = () => {
       grid.push(
         <View key={row} style={styles.row}>
           {rowLevels}
-        </View>
+        </View>,
       );
     }
     return grid;
@@ -74,9 +98,6 @@ const JeeLevelsScreen = () => {
 
   return (
     <SafeAreaView style={styles.container}>
-      {/* <View style={styles.header}>
-        <Text style={styles.headerText}>JEE Levels</Text>
-      </View> */}
       <ScrollView contentContainerStyle={styles.scrollContent}>
         {renderGrid()}
       </ScrollView>
@@ -204,8 +225,8 @@ export default JeeLevelsScreen;
 //         }
 //       }
 //       grid.push(
-//         <Animated.View 
-//           key={row} 
+//         <Animated.View
+//           key={row}
 //           entering={FadeInUp.delay(200 + row * 50).springify()}
 //           style={styles.row}
 //         >
@@ -225,13 +246,13 @@ export default JeeLevelsScreen;
 //         end={{x: 1, y: 1}}
 //       />
 //       <SafeAreaView style={styles.safeArea}>
-//         <Animated.Text 
+//         <Animated.Text
 //           entering={FadeInDown.delay(200).springify()}
 //           style={styles.headerText}
 //         >
 //           JEE Levels
 //         </Animated.Text>
-//         <ScrollView 
+//         <ScrollView
 //           contentContainerStyle={styles.scrollContent}
 //           showsVerticalScrollIndicator={false}
 //         >

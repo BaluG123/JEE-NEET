@@ -1,12 +1,15 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
+import {NavigationContainer} from '@react-navigation/native';
+import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './src/screens/HomeScreen';
 import JEEScreen from './src/screens/JEEScreen';
 import NEETScreen from './src/screens/NEETScreen';
 import SplashScreen from './src/screens/SplashScreen';
 import JeelevelsScreen from './src/screens/JeelevelsScreen';
 import NeetLevelsScreen from './src/screens/NeetlevelsScreen';
+import JeeLevelsScreen from './src/screens/JeelevelsScreen';
+import questionsData from './src/util/JEE.json';
+import QuestionScreen from './src/screens/QuestionScreen';
 
 const Stack = createStackNavigator();
 
@@ -33,19 +36,18 @@ export default function App() {
           headerRightContainerStyle: {
             paddingRight: 15,
           },
-          cardStyle: { backgroundColor: '#1a1a1a' },
+          cardStyle: {backgroundColor: '#1a1a1a'},
           headerShadowVisible: false,
-        }}
-      >
+        }}>
         <Stack.Screen
           name="Splash"
           component={SplashScreen}
-          options={{ headerShown: false }}
+          options={{headerShown: false}}
         />
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ headerShown: false }}
+          options={{headerShown: false}}
         />
         <Stack.Screen
           name="JEEScreen"
@@ -64,13 +66,19 @@ export default function App() {
           }}
         />
         <Stack.Screen
+          name="JeeLevels"
+          component={JeeLevelsScreen}
+          initialParams={{questions: questionsData.questions}}
+          options={{title: 'JEE Levels'}}
+        />
+        {/* <Stack.Screen
           name="JEELevelsScreen"
           component={JeelevelsScreen}
           options={{
             title: 'JEE Practice Quiz',
             headerTransparent: false,
           }}
-        />
+        /> */}
         <Stack.Screen
           name="NEETLevelsScreen"
           component={NeetLevelsScreen}
@@ -78,6 +86,11 @@ export default function App() {
             title: 'NEET Practice Quiz',
             headerTransparent: false,
           }}
+        />
+        <Stack.Screen
+          name="Question"
+          component={QuestionScreen}
+          options={{title: 'Question'}}
         />
       </Stack.Navigator>
     </NavigationContainer>
