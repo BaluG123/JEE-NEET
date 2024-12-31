@@ -69,7 +69,7 @@ const HomeScreen = ({navigation}) => {
         </TouchableOpacity>
 
         <TouchableOpacity
-          onPress={() => navigation.navigate('JeeAdvancedLevels')}
+          onPress={() => navigation.navigate('JEEAdvancedPractice')}
           style={styles.cardWrapper}>
           <LinearGradient
             colors={['#673AB7', '#512DA8']}

@@ -13,6 +13,7 @@ import QuestionScreen from './src/screens/QuestionScreen';
 import {Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import JEEAdvancedSyllabus from './src/screens/JEEAdvancedSyllabus';
+import JEEAdvancedPractice from './src/screens/JEEAdvancedPractice';
 
 const Stack = createStackNavigator();
 
@@ -106,6 +107,12 @@ export default function App() {
           name="JeeadvancedSyllabus"
           component={JEEAdvancedSyllabus}
           options={{title: 'JEE Advanced Syllabus'}}
+        />
+        <Stack.Screen
+          name="JEEAdvancedPractice"
+          component={JEEAdvancedPractice}
+          // initialParams={{questions: questionsData.questions}}
+          options={{title: 'JEE Advanced Practice'}}
         />
       </Stack.Navigator>
     </NavigationContainer>

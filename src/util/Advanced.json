@@ -1,0 +1,661 @@
+{
+  "questions": [
+    {
+      "id": "PHY001",
+      "subject": "physics",
+      "chapter": "Circular Motion & SHM",
+      "difficulty": 4,
+      "question": "A particle of mass m is attached to two identical springs of spring constant k, with the springs making an angle θ with the horizontal. The particle moves in a horizontal circular path of radius R. If T is the tension in each spring when the particle is moving with angular velocity ω, which of the following relations is correct?",
+      "options": [
+        {
+          "id": "A",
+          "text": "T = k√(R² + l₀²) - kl₀"
+        },
+        {
+          "id": "B",
+          "text": "mω²R = 2T sin θ"
+        },
+        {
+          "id": "C",
+          "text": "T cos θ = kl₀"
+        },
+        {
+          "id": "D",
+          "text": "All of the above"
+        }
+      ],
+      "correctAnswer": "D",
+      "solution": {
+        "steps": [
+          "For the vertical components: T cos θ = kl₀ (equilibrium condition)",
+          "For the horizontal components: mω²R provides centripetal force",
+          "The centripetal force is balanced by 2T sin θ",
+          "The extension of spring follows: T = k(√(R² + l₀²) - l₀)",
+          "All three equations must be satisfied simultaneously"
+        ]
+      },
+      "hint": "Consider both the forces in equilibrium and the geometry of the spring extension."
+    },
+    {
+      "id": "PHY002",
+      "subject": "physics",
+      "chapter": "Rotational Dynamics & Oscillations",
+      "difficulty": 5,
+      "question": "A uniform rod of length L and mass M is pivoted at one end and oscillates in a vertical plane. A particle of mass m is attached to its free end. If the system performs small oscillations, find the time period. (g is acceleration due to gravity)",
+      "options": [
+        {
+          "id": "A",
+          "text": "2π√((L/3g)(3M + 4m)/(M + m))"
+        },
+        {
+          "id": "B",
+          "text": "2π√((L/g)(M + 3m)/(M + m))"
+        },
+        {
+          "id": "C",
+          "text": "2π√((L/g)(3M + 4m)/(3(M + m)))"
+        },
+        {
+          "id": "D",
+          "text": "2π√((L/g)(M + 4m)/(M + m))"
+        }
+      ],
+      "correctAnswer": "C",
+      "solution": {
+        "steps": [
+          "Calculate moment of inertia of rod about pivot: I₁ = ML²/3",
+          "Calculate moment of inertia of particle: I₂ = mL²",
+          "Total moment of inertia: I = ML²/3 + mL²",
+          "Calculate torque for small angular displacement θ: τ = -((M/2)g + mg)Lθ",
+          "Use T = 2π√(I/κ) where κ is torque per unit angular displacement",
+          "Substitute and simplify to get T = 2π√((L/g)(3M + 4m)/(3(M + m)))"
+        ]
+      },
+      "hint": "Consider the moment of inertia of both the rod and the particle, and use the equation for angular SHM."
+    },
+    {
+      "id": "PHY003",
+      "subject": "physics",
+      "chapter": "Electromagnetism & Mechanics",
+      "difficulty": 5,
+      "question": "A conducting rod of length L and mass m slides without friction on two vertical conducting rails separated by distance L. A uniform magnetic field B exists perpendicular to the plane of the rails. If the rod is released from rest, what will be its terminal velocity? The resistance of the circuit formed is R.",
+      "options": [
+        {
+          "id": "A",
+          "text": "mgR/B²L²"
+        },
+        {
+          "id": "B",
+          "text": "mgR/B²L"
+        },
+        {
+          "id": "C",
+          "text": "mg/BL"
+        },
+        {
+          "id": "D",
+          "text": "mgB/RL"
+        }
+      ],
+      "correctAnswer": "A",
+      "solution": {
+        "steps": [
+          "The moving rod in magnetic field induces EMF given by ε = BLv where v is the velocity",
+          "The induced current in the circuit is I = BLv/R",
+          "This current experiences a magnetic force F = BIL = B²L²v/R upward",
+          "At terminal velocity, magnetic force equals weight: B²L²v/R = mg",
+          "Solving for terminal velocity gives v = mgR/B²L²"
+        ]
+      },
+      "hint": "Consider the balance between gravitational force and magnetic force at terminal velocity"
+    },
+    {
+      "id": "PHY004",
+      "subject": "physics",
+      "chapter": "Waves & Thermodynamics",
+      "difficulty": 5,
+      "question": "A cylindrical tube of length L is closed at one end and contains a gas column. A small hole exists at a distance x from the closed end. The tube is gradually heated such that the temperature increases linearly with time as T = T₀(1 + αt). Find the time intervals between successive moments when sound is heard from the hole. Take speed of sound as v = √(γRT) where γ and R are constants.",
+      "options": [
+        {
+          "id": "A",
+          "text": "(2/α)[(n+1)/n - 1] where n is mode number"
+        },
+        {
+          "id": "B",
+          "text": "(1/α)[√((n+1)/n) - 1]"
+        },
+        {
+          "id": "C",
+          "text": "(2/α)[√((n+1)/n) - 1]"
+        },
+        {
+          "id": "D",
+          "text": "(1/2α)[√((n+1)/n) - 1]"
+        }
+      ],
+      "correctAnswer": "B",
+      "solution": {
+        "steps": [
+          "For resonance in a tube closed at one end, wavelength follows λn = 4L/(2n-1) where n is mode number",
+          "The frequency condition for resonance at the hole is v/λn = nx/2L",
+          "Substituting v = √(γRT) = √(γRT₀(1 + αt))",
+          "For successive resonances, n changes to n+1",
+          "Taking ratio of times for successive resonances and solving gives Δt = (1/α)[√((n+1)/n) - 1]"
+        ]
+      },
+      "hint": "Consider the resonance conditions and how they change with temperature"
+    },
+    {
+      "id": "PHY005",
+      "subject": "physics",
+      "chapter": "Quantum Mechanics & Optics",
+      "difficulty": 5,
+      "question": "A quantum particle is confined in a one-dimensional infinite potential well of width L. The well is suddenly expanded to width 2L. Calculate the probability that the particle will be found in the first excited state of the new well if it was initially in the ground state of the original well.",
+      "options": [
+        {
+          "id": "A",
+          "text": "32/9π²"
+        },
+        {
+          "id": "B",
+          "text": "16/9π²"
+        },
+        {
+          "id": "C",
+          "text": "8/π²"
+        },
+        {
+          "id": "D",
+          "text": "4/9π²"
+        }
+      ],
+      "correctAnswer": "A",
+      "solution": {
+        "steps": [
+          "Initial wavefunction ψᵢ = √(2/L)sin(πx/L) for 0 ≤ x ≤ L and 0 elsewhere",
+          "Final wavefunction basis ψₙ = √(1/2L)sin(nπx/2L) for 0 ≤ x ≤ 2L",
+          "Probability is square of overlap integral between initial state and final excited state",
+          "Overlap integral = ∫ψᵢ*ψ₂dx from 0 to L (as initial function is 0 beyond L)",
+          "Solving integral gives amplitude = 4√2/3π, squaring gives probability = 32/9π²"
+        ]
+      },
+      "hint": "Use overlap integral between initial and final wavefunctions to find transition probability"
+    },
+    {
+      "id": "CHEM001",
+      "subject": "chemistry",
+      "chapter": "Chemical Equilibrium",
+      "difficulty": 4,
+      "question": "For the equilibrium N₂O₄(g) ⇌ 2NO₂(g), the value of Kc at 25°C is 4.0 × 10⁻³ mol/L. If the initial concentration of N₂O₄ is 0.5 mol/L and no NO₂ is present initially, calculate the equilibrium concentration of NO₂ when equilibrium is reached.",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.089 mol/L"
+        },
+        {
+          "id": "B",
+          "text": "0.063 mol/L"
+        },
+        {
+          "id": "C",
+          "text": "0.045 mol/L"
+        },
+        {
+          "id": "D",
+          "text": "0.032 mol/L"
+        }
+      ],
+      "correctAnswer": "B",
+      "solution": {
+        "steps": [
+          "Let x mol/L of N₂O₄ dissociate at equilibrium",
+          "At equilibrium: [N₂O₄] = 0.5 - x and [NO₂] = 2x",
+          "Using Kc = [NO₂]²/[N₂O₄] = 4.0 × 10⁻³",
+          "Substitute: (2x)²/(0.5 - x) = 4.0 × 10⁻³",
+          "Solve quadratic equation to get x = 0.0315",
+          "[NO₂] = 2(0.0315) = 0.063 mol/L"
+        ]
+      },
+      "hint": "Use ICE table (Initial, Change, Equilibrium) and consider stoichiometry"
+    },
+    {
+      "id": "MATH001",
+      "subject": "mathematics",
+      "chapter": "Vector Calculus",
+      "difficulty": 5,
+      "question": "If r⃗(t) = (cost)î + (sint)ĵ + (t)k̂ represents the position vector of a particle at time t, find the magnitude of the binormal vector B⃗ at t = 0.",
+      "options": [
+        {
+          "id": "A",
+          "text": "1/√2"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "√2"
+        },
+        {
+          "id": "D",
+          "text": "2"
+        }
+      ],
+      "correctAnswer": "B",
+      "solution": {
+        "steps": [
+          "Calculate velocity v⃗ = dr⃗/dt = (-sint)î + (cost)ĵ + k̂",
+          "Calculate acceleration a⃗ = d²r⃗/dt² = (-cost)î + (-sint)ĵ",
+          "Find v⃗ × a⃗ at t = 0",
+          "At t = 0: v⃗ = î + k̂, a⃗ = -î",
+          "B⃗ = (v⃗ × a⃗)/|v⃗ × a⃗|",
+          "|B⃗| = 1 as it's a unit vector"
+        ]
+      },
+      "hint": "Use the formula B⃗ = (v⃗ × a⃗)/|v⃗ × a⃗| and evaluate at t = 0"
+    },
+    {
+      "id": "PHY006",
+      "subject": "physics",
+      "chapter": "Electromagnetic Induction",
+      "difficulty": 4,
+      "question": "A square loop of side L and resistance R is placed in xy-plane. A magnetic field B = B₀(1 - e⁻ᵗ/τ)k̂ is applied. Find the total charge that flows through the loop.",
+      "options": [
+        {
+          "id": "A",
+          "text": "B₀L²/R"
+        },
+        {
+          "id": "B",
+          "text": "2B₀L²/R"
+        },
+        {
+          "id": "C",
+          "text": "B₀L²τ/R"
+        },
+        {
+          "id": "D",
+          "text": "2B₀L²τ/R"
+        }
+      ],
+      "correctAnswer": "A",
+      "solution": {
+        "steps": [
+          "Induced EMF ε = -dΦ/dt where Φ is magnetic flux",
+          "Φ = B₀L²(1 - e⁻ᵗ/τ)",
+          "ε = (B₀L²/τ)e⁻ᵗ/τ",
+          "Current I = ε/R",
+          "Total charge Q = ∫(I dt) from 0 to ∞",
+          "Q = (B₀L²/R)∫(e⁻ᵗ/τ/τ)dt = B₀L²/R"
+        ]
+      },
+      "hint": "Consider the total flux change and integrate the current over all time"
+    },
+    {
+      "id": "CHEM002",
+      "subject": "chemistry",
+      "chapter": "Electrochemistry",
+      "difficulty": 5,
+      "question": "In an electrolysis of CuSO₄ solution using copper electrodes, 0.318 g of copper was deposited at cathode in 1000 seconds. If the current efficiency is 95%, calculate the current passed through the solution. (Atomic mass of Cu = 63.5 g/mol)",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.5 A"
+        },
+        {
+          "id": "B",
+          "text": "1.0 A"
+        },
+        {
+          "id": "C",
+          "text": "1.5 A"
+        },
+        {
+          "id": "D",
+          "text": "2.0 A"
+        }
+      ],
+      "correctAnswer": "B",
+      "solution": {
+        "steps": [
+          "Calculate moles of Cu deposited = 0.318/63.5 = 0.005 mol",
+          "For Cu²⁺ + 2e⁻ → Cu, 2 Faradays deposit 1 mole",
+          "Charge required = (0.005 × 2 × 96500)/0.95 C",
+          "Current = Charge/Time = 1000 A"
+        ]
+      },
+      "hint": "Use Faraday's laws and consider current efficiency"
+    },
+    {
+      "id": "MATH002",
+      "subject": "mathematics",
+      "chapter": "Complex Analysis",
+      "difficulty": 4,
+      "question": "Evaluate the contour integral ∮(z²/(z² + 4))dz around the circle |z| = 3.",
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "2πi"
+        },
+        {
+          "id": "C",
+          "text": "4πi"
+        },
+        {
+          "id": "D",
+          "text": "-2πi"
+        }
+      ],
+      "correctAnswer": "B",
+      "solution": {
+        "steps": [
+          "The poles are at z = ±2i",
+          "Only z = 2i lies inside |z| = 3",
+          "Calculate residue at z = 2i: lim(z→2i)(z-2i)z²/(z²+4)",
+          "Residue = (2i)²/(2(2i)) = i",
+          "By Cauchy's residue theorem, integral = 2πi × residue = 2πi"
+        ]
+      },
+      "hint": "Use Cauchy's residue theorem and find poles inside the contour"
+    },
+    {
+      "id": "CHEM003",
+      "subject": "chemistry",
+      "chapter": "Organic Chemistry",
+      "difficulty": 5,
+      "question": "In the following reaction sequence: Benzene → A → B → C, where A is C₆H₅NO₂, B is C₆H₇NO₂, and C is C₆H₇N. Identify the correct sequence of reagents used.",
+      "options": [
+        {
+          "id": "A",
+          "text": "HNO₃/H₂SO₄, Fe/HCl, NaNO₂/HCl"
+        },
+        {
+          "id": "B",
+          "text": "HNO₃/H₂SO₄, Fe/HCl, LiAlH₄"
+        },
+        {
+          "id": "C",
+          "text": "HNO₃/H₂SO₄, Sn/HCl, NaBH₄"
+        },
+        {
+          "id": "D",
+          "text": "HNO₃/H₂SO₄, Zn/NaOH, NaNO₂/HCl"
+        }
+      ],
+      "correctAnswer": "B",
+      "solution": {
+        "steps": [
+          "A (C₆H₅NO₂) is nitrobenzene, formed by nitration of benzene",
+          "B (C₆H₇NO₂) is phenylhydroxylamine, formed by partial reduction",
+          "C (C₆H₇N) is aniline, formed by complete reduction",
+          "HNO₃/H₂SO₄ performs nitration",
+          "Fe/HCl reduces nitrobenzene to phenylhydroxylamine",
+          "LiAlH₄ completes reduction to aniline"
+        ]
+      },
+      "hint": "Consider the oxidation states of nitrogen in each compound"
+    },
+    {
+      "id": "MATH003",
+      "subject": "mathematics",
+      "chapter": "Differential Equations",
+      "difficulty": 4,
+      "question": "The solution of the differential equation (y²-x²)dx + 2xydy = 0 passing through the point (1,2) is:",
+      "options": [
+        {
+          "id": "A",
+          "text": "x² + y² = 5"
+        },
+        {
+          "id": "B",
+          "text": "x² - y² = -3"
+        },
+        {
+          "id": "C",
+          "text": "x² + y² = 8"
+        },
+        {
+          "id": "D",
+          "text": "x² - y² = 3"
+        }
+      ],
+      "correctAnswer": "B",
+      "solution": {
+        "steps": [
+          "Rearrange to (y²-x²)dx + 2xydy = 0",
+          "This is equivalent to d(x²-y²) = 0",
+          "Therefore x²-y² = C (constant)",
+          "At point (1,2): 1-4 = C",
+          "So C = -3",
+          "Final solution: x²-y² = -3"
+        ]
+      },
+      "hint": "Look for the form of a perfect differential"
+    },
+    {
+      "id": "PHY007",
+      "subject": "physics",
+      "chapter": "Modern Physics",
+      "difficulty": 5,
+      "question": "An electron in the ground state of hydrogen atom absorbs a photon and gets excited to a state with principal quantum number n. If the wavelength of absorbed photon is 102.7 nm, find n. (Given: Rydberg constant = 1.097 × 10⁷ m⁻¹)",
+      "options": [
+        {
+          "id": "A",
+          "text": "2"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        }
+      ],
+      "correctAnswer": "B",
+      "solution": {
+        "steps": [
+          "For transition from n₁ to n₂: 1/λ = R(1/n₁² - 1/n₂²)",
+          "Here n₁ = 1 (ground state)",
+          "1/(102.7 × 10⁻⁹) = 1.097 × 10⁷(1/1² - 1/n²)",
+          "Solve for n to get n = 3"
+        ]
+      },
+      "hint": "Use the Rydberg formula for hydrogen spectrum"
+    },
+    {
+      "id": "CHEM004",
+      "subject": "chemistry",
+      "chapter": "Chemical Kinetics",
+      "difficulty": 4,
+      "question": "For a first-order reaction, the half-life is 693 s. What percentage of reactant will remain after 2772 s?",
+      "options": [
+        {
+          "id": "A",
+          "text": "6.25%"
+        },
+        {
+          "id": "B",
+          "text": "12.5%"
+        },
+        {
+          "id": "C",
+          "text": "3.125%"
+        },
+        {
+          "id": "D",
+          "text": "25%"
+        }
+      ],
+      "correctAnswer": "A",
+      "solution": {
+        "steps": [
+          "For first order reaction: t₁/₂ = 0.693/k",
+          "k = 0.693/693 = 0.001 s⁻¹",
+          "Using N(t) = N₀e⁻ᵏᵗ",
+          "Substitute t = 2772 s",
+          "N(2772)/N₀ = e⁻⁰·⁰⁰¹ˣ²⁷⁷² = 0.0625",
+          "Therefore 6.25% remains"
+        ]
+      },
+      "hint": "Use the relationship between half-life and rate constant"
+    },
+    {
+      "id": "MATH004",
+      "subject": "mathematics",
+      "chapter": "3D Geometry",
+      "difficulty": 5,
+      "question": "A plane passes through the point (1,2,3) and is perpendicular to the lines of intersection of the planes x+y+z=1 and x-y+z=3, and x+2y-z=2 and 2x+y+z=4. Find the equation of the plane.",
+      "options": [
+        {
+          "id": "A",
+          "text": "x - 2y + z = 6"
+        },
+        {
+          "id": "B",
+          "text": "2x + y - z = 2"
+        },
+        {
+          "id": "C",
+          "text": "x + y - 2z = -2"
+        },
+        {
+          "id": "D",
+          "text": "2x - y + z = 4"
+        }
+      ],
+      "correctAnswer": "C",
+      "solution": {
+        "steps": [
+          "Find direction vectors of lines of intersection using cross product of normal vectors",
+          "d₁ = (1,1,1) × (1,-1,1) = (2,0,-2)",
+          "d₂ = (1,2,-1) × (2,1,1) = (3,-3,-3)",
+          "Normal to required plane = d₁ × d₂ = (1,1,-2)",
+          "Using point (1,2,3), equation is x + y - 2z + c = 0",
+          "Substitute point to get c = -2"
+        ]
+      },
+      "hint": "Use cross products to find direction of line of intersection"
+    },
+    {
+      "id": "PHY008",
+      "subject": "physics",
+      "chapter": "Thermodynamics",
+      "difficulty": 4,
+      "question": "An ideal gas undergoes a cyclic process ABCA. Along AB: P = P₀(constant), along BC: V = V₀(constant), and along CA: T = T₀(constant). If work done in complete cycle is W, find the heat absorbed in process AB.",
+      "options": [
+        {
+          "id": "A",
+          "text": "W"
+        },
+        {
+          "id": "B",
+          "text": "3W/2"
+        },
+        {
+          "id": "C",
+          "text": "2W"
+        },
+        {
+          "id": "D",
+          "text": "5W/2"
+        }
+      ],
+      "correctAnswer": "C",
+      "solution": {
+        "steps": [
+          "For cyclic process, ΔU = 0",
+          "Therefore Q = W (First law)",
+          "Work done in AB = P₀ΔV",
+          "Work done in BC = 0 (constant volume)",
+          "Work done in CA = P₀V₀ln(V₁/V₂)/2",
+          "Heat in AB = ΔU + W = (3/2)P₀ΔV + P₀ΔV = 2W"
+        ]
+      },
+      "hint": "Use first law of thermodynamics and properties of ideal gas"
+    },
+    {
+      "id": "CHEM005",
+      "subject": "chemistry",
+      "chapter": "Coordination Chemistry",
+      "difficulty": 5,
+      "question": "The number of geometrical isomers possible for [Co(en)₂Cl₂]⁺ where 'en' is ethylenediamine (bidentate ligand) is:",
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "2"
+        },
+        {
+          "id": "C",
+          "text": "3"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "correctAnswer": "B",
+      "solution": {
+        "steps": [
+          "Each 'en' occupies two adjacent coordination sites",
+          "Complex has octahedral geometry",
+          "Two Cl⁻ ligands can be cis or trans to each other",
+          "When Cl⁻ ligands are cis: one isomer possible",
+          "When Cl⁻ ligands are trans: one isomer possible",
+          "Total number of isomers = 2"
+        ]
+      },
+      "hint": "Consider the bidentate nature of ethylenediamine and octahedral geometry"
+    },
+    {
+      "id": "MATH005",
+      "subject": "mathematics",
+      "chapter": "Probability",
+      "difficulty": 4,
+      "question": "Three random variables X, Y, and Z are such that P(X=1) = P(Y=1) = P(Z=1) = p and P(X=0) = P(Y=0) = P(Z=0) = 1-p. If X, Y, and Z are independent and P(X+Y+Z = 2) = 27/64, find the value of p.",
+      "options": [
+        {
+          "id": "A",
+          "text": "1/2"
+        },
+        {
+          "id": "B",
+          "text": "3/4"
+        },
+        {
+          "id": "C",
+          "text": "2/3"
+        },
+        {
+          "id": "D",
+          "text": "5/8"
+        }
+      ],
+      "correctAnswer": "B",
+      "solution": {
+        "steps": [
+          "P(X+Y+Z = 2) means exactly two variables are 1",
+          "This can happen in ³C₂ = 3 ways",
+          "For each way: P(two 1s, one 0) = p²(1-p)",
+          "Total probability = 3p²(1-p) = 27/64",
+          "Solve: 3p²(1-p) = 27/64",
+          "p = 3/4"
+        ]
+      },
+      "hint": "Use binomial probability and independence of variables"
+    }
+  ]
+}
