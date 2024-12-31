@@ -25,8 +25,6 @@
 // } from 'react-native-reanimated';
 // import questionsData from '../util/Advanced.json';
 
-// const AnimatedTouchable = Animated.createAnimatedComponent(TouchableOpacity);
-
 // const JEEAdvancedScreen = ({navigation}) => {
 //   // States
 //   const [questions, setQuestions] = useState([]);
@@ -50,8 +48,6 @@
 //     const initializeQuiz = async () => {
 //       try {
 //         setQuestions(questionsData.questions);
-
-//         // Restore progress if available
 //         const savedProgress = await AsyncStorage.getItem('progress');
 //         if (savedProgress) {
 //           const progress = JSON.parse(savedProgress);
@@ -59,7 +55,6 @@
 //           setCorrectAnswers(new Set(progress.correctAnswers));
 //           setCurrentQuestionIndex(progress.currentQuestionIndex);
 //         }
-
 //         setLoading(false);
 //       } catch (err) {
 //         setError('Failed to initialize quiz');
@@ -70,7 +65,6 @@
 //     initializeQuiz();
 //   }, []);
 
-//   // Timer effect
 //   useEffect(() => {
 //     const interval = setInterval(() => {
 //       setTimer(prev => (prev > 0 ? prev - 1 : 0));
@@ -78,14 +72,12 @@
 //     return () => clearInterval(interval);
 //   }, []);
 
-//   // Update progress
 //   useEffect(() => {
 //     if (questions.length > 0) {
 //       setProgressWidth(questionsAttempted.size / questions.length);
 //     }
 //   }, [questionsAttempted, questions]);
 
-//   // Save progress
 //   useEffect(() => {
 //     const saveProgress = async () => {
 //       try {
@@ -103,27 +95,46 @@
 //     saveProgress();
 //   }, [questionsAttempted, correctAnswers, currentQuestionIndex]);
 
-//   // Handle answer selection
+//   // Modified handleAnswerSelect function
 //   const handleAnswerSelect = useCallback(
 //     optionId => {
-//       if (questionsAttempted.has(currentQuestionIndex)) return;
-
-//       scaleAnim.value = withSpring(0.95);
-//       setTimeout(() => {
-//         scaleAnim.value = withSpring(1);
-//       }, 200);
-
+//       // Remove the check for already attempted questions to allow re-selection
 //       setSelectedAnswer(optionId);
-//       setQuestionsAttempted(prev => new Set(prev.add(currentQuestionIndex)));
 
+//       // Add to attempted questions
+//       const newQuestionsAttempted = new Set(questionsAttempted);
+//       newQuestionsAttempted.add(currentQuestionIndex);
+//       setQuestionsAttempted(newQuestionsAttempted);
+
+//       // Update correct answers
 //       if (optionId === questions[currentQuestionIndex].correctAnswer) {
-//         setCorrectAnswers(prev => new Set(prev.add(currentQuestionIndex)));
+//         const newCorrectAnswers = new Set(correctAnswers);
+//         newCorrectAnswers.add(currentQuestionIndex);
+//         setCorrectAnswers(newCorrectAnswers);
+//       } else {
+//         // Remove from correct answers if previously correct
+//         const newCorrectAnswers = new Set(correctAnswers);
+//         newCorrectAnswers.delete(currentQuestionIndex);
+//         setCorrectAnswers(newCorrectAnswers);
 //       }
+
+//       // Animate the selection
+//       Animated.sequence([
+//         Animated.timing(new Animated.Value(1), {
+//           toValue: 0.95,
+//           duration: 100,
+//           useNativeDriver: true,
+//         }),
+//         Animated.timing(new Animated.Value(0.95), {
+//           toValue: 1,
+//           duration: 100,
+//           useNativeDriver: true,
+//         }),
+//       ]).start();
 //     },
-//     [currentQuestionIndex, questions, questionsAttempted],
+//     [currentQuestionIndex, questions, questionsAttempted, correctAnswers],
 //   );
 
-//   // Navigation
 //   const navigateToNextQuestion = useCallback(() => {
 //     if (currentQuestionIndex < questions.length - 1) {
 //       fadeAnim.value = withTiming(0, {duration: 200});
@@ -158,7 +169,6 @@
 //     return `${mins}:${secs.toString().padStart(2, '0')}`;
 //   };
 
-//   // Loading state
 //   if (loading) {
 //     return (
 //       <View style={styles.loadingContainer}>
@@ -168,7 +178,6 @@
 //     );
 //   }
 
-//   // Error state
 //   if (error) {
 //     return (
 //       <View style={styles.errorContainer}>
@@ -182,14 +191,12 @@
 //     );
 //   }
 
-//   // Main render
 //   return (
 //     <GestureHandlerRootView style={styles.container}>
 //       <LinearGradient
 //         colors={['#4c669f', '#3b5998', '#192f6a']}
 //         style={styles.gradient}>
 //         <ScrollView style={styles.scrollView}>
-//           {/* Progress and Timer */}
 //           <View style={styles.header}>
 //             <View style={styles.progressBarContainer}>
 //               <Animated.View
@@ -210,7 +217,6 @@
 //             </View>
 //           </View>
 
-//           {/* Question Card */}
 //           <Reanimated.View style={[styles.questionCard, {opacity: fadeAnim}]}>
 //             <View style={styles.questionHeader}>
 //               <Text style={styles.questionNumber}>
@@ -234,10 +240,11 @@
 //               {questions[currentQuestionIndex].question}
 //             </Text>
 
-//             {/* Options */}
+//             {/* Modified Options Section */}
 //             {questions[currentQuestionIndex].options.map(option => (
-//               <AnimatedTouchable
+//               <TouchableOpacity
 //                 key={option.id}
+//                 activeOpacity={0.7}
 //                 style={[
 //                   styles.optionButton,
 //                   selectedAnswer === option.id && styles.selectedOption,
@@ -250,9 +257,14 @@
 //                       questions[currentQuestionIndex].correctAnswer &&
 //                     styles.wrongOption,
 //                 ]}
-//                 onPress={() => handleAnswerSelect(option.id)}
-//                 disabled={questionsAttempted.has(currentQuestionIndex)}>
-//                 <Text style={styles.optionText}>{option.text}</Text>
+//                 onPress={() => handleAnswerSelect(option.id)}>
+//                 <Text
+//                   style={[
+//                     styles.optionText,
+//                     selectedAnswer === option.id && styles.selectedOptionText,
+//                   ]}>
+//                   {option.text}
+//                 </Text>
 //                 {selectedAnswer === option.id && (
 //                   <Icon
 //                     name={
@@ -270,10 +282,9 @@
 //                     }
 //                   />
 //                 )}
-//               </AnimatedTouchable>
+//               </TouchableOpacity>
 //             ))}
 
-//             {/* Hint and Solution Buttons */}
 //             <View style={styles.buttonContainer}>
 //               <TouchableOpacity
 //                 style={styles.button}
@@ -294,7 +305,6 @@
 //               </TouchableOpacity>
 //             </View>
 
-//             {/* Hint Section */}
 //             {showHint && (
 //               <View style={styles.hintContainer}>
 //                 <Text style={styles.hintText}>
@@ -303,7 +313,6 @@
 //               </View>
 //             )}
 
-//             {/* Solution Section */}
 //             {showSolution && (
 //               <View style={styles.solutionContainer}>
 //                 <Text style={styles.solutionTitle}>Solution:</Text>
@@ -319,7 +328,6 @@
 //           </Reanimated.View>
 //         </ScrollView>
 
-//         {/* Navigation Buttons */}
 //         <View style={styles.navigationButtons}>
 //           <TouchableOpacity
 //             style={[
@@ -359,6 +367,7 @@ import {
   StyleSheet,
   Animated,
   ActivityIndicator,
+  Alert,
 } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import LinearGradient from 'react-native-linear-gradient';
@@ -375,6 +384,22 @@ import Reanimated, {
   withTiming,
 } from 'react-native-reanimated';
 import questionsData from '../util/Advanced.json';
+import {
+  RewardedAd,
+  RewardedAdEventType,
+  TestIds,
+} from 'react-native-google-mobile-ads';
+
+const {width} = Dimensions.get('window');
+
+// Replace with your ad unit ID
+const adUnitId = __DEV__
+  ? TestIds.REWARDED
+  : 'ca-app-pub-2627956667785383/3331162967';
+
+const rewardedAd = RewardedAd.createForAdRequest(adUnitId, {
+  keywords: ['education', 'learning'],
+});
 
 const JEEAdvancedScreen = ({navigation}) => {
   // States
@@ -389,6 +414,7 @@ const JEEAdvancedScreen = ({navigation}) => {
   const [questionsAttempted, setQuestionsAttempted] = useState(new Set());
   const [correctAnswers, setCorrectAnswers] = useState(new Set());
   const [progressWidth, setProgressWidth] = useState(0);
+  const [rewardedAdLoaded, setRewardedAdLoaded] = useState(false);
 
   // Animations
   const fadeAnim = useSharedValue(1);
@@ -445,6 +471,31 @@ const JEEAdvancedScreen = ({navigation}) => {
 
     saveProgress();
   }, [questionsAttempted, correctAnswers, currentQuestionIndex]);
+
+  useEffect(() => {
+    const unsubscribeLoaded = rewardedAd.addAdEventListener(
+      RewardedAdEventType.LOADED,
+      () => {
+        setRewardedAdLoaded(true);
+      },
+    );
+    const unsubscribeEarned = rewardedAd.addAdEventListener(
+      RewardedAdEventType.EARNED_REWARD,
+      reward => {
+        console.log('User earned reward of ', reward);
+        setShowSolution(true);
+      },
+    );
+
+    // Start loading the rewarded ad straight away
+    rewardedAd.load();
+
+    // Unsubscribe from events on unmount
+    return () => {
+      unsubscribeLoaded();
+      unsubscribeEarned();
+    };
+  }, []);
 
   // Modified handleAnswerSelect function
   const handleAnswerSelect = useCallback(
@@ -520,6 +571,35 @@ const JEEAdvancedScreen = ({navigation}) => {
     return `${mins}:${secs.toString().padStart(2, '0')}`;
   };
 
+  const showRewardedAd = () => {
+    if (rewardedAdLoaded) {
+      rewardedAd.show().catch(error => {
+        // console.error('Ad show error:', error);
+        Alert.alert(
+          'Quick Update',
+          'We encountered a small hiccup with the ad, but no worries - you can still view the solution!',
+          [
+            {
+              text: 'Show Solution',
+              onPress: () => setShowSolution(true),
+            },
+          ],
+        );
+      });
+    } else {
+      Alert.alert(
+        'Just a Moment',
+        'The ad is taking a bit longer to load. We willl show you the solution right away instead!',
+        [
+          {
+            text: 'Show Solution',
+            onPress: () => setShowSolution(true),
+          },
+        ],
+      );
+    }
+  };
+
   if (loading) {
     return (
       <View style={styles.loadingContainer}>
@@ -591,7 +671,6 @@ const JEEAdvancedScreen = ({navigation}) => {
               {questions[currentQuestionIndex].question}
             </Text>
 
-            {/* Modified Options Section */}
             {questions[currentQuestionIndex].options.map(option => (
               <TouchableOpacity
                 key={option.id}
@@ -646,9 +725,7 @@ const JEEAdvancedScreen = ({navigation}) => {
                 </Text>
               </TouchableOpacity>
 
-              <TouchableOpacity
-                style={styles.button}
-                onPress={() => setShowSolution(!showSolution)}>
+              <TouchableOpacity style={styles.button} onPress={showRewardedAd}>
                 <Icon name="book-open-variant" size={24} color="#FFF" />
                 <Text style={styles.buttonText}>
                   {showSolution ? 'Hide Solution' : 'Show Solution'}

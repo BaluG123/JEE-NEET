@@ -165,8 +165,22 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import {
+  RewardedAd,
+  RewardedAdEventType,
+  TestIds,
+} from 'react-native-google-mobile-ads';
 
 const {width} = Dimensions.get('window');
+
+// Replace with your ad unit ID
+const adUnitId = __DEV__
+  ? TestIds.REWARDED
+  : 'ca-app-pub-2627956667785383/7745050694';
+
+const rewardedAd = RewardedAd.createForAdRequest(adUnitId, {
+  keywords: ['education', 'learning'],
+});
 
 const QuestionScreen = ({route, navigation}) => {
   const {level, questions} = route.params;
@@ -176,9 +190,32 @@ const QuestionScreen = ({route, navigation}) => {
   const [showErrorModal, setShowErrorModal] = useState(false);
   const [showSolutionModal, setShowSolutionModal] = useState(false);
   const [showHintModal, setShowHintModal] = useState(false);
+  const [rewardedAdLoaded, setRewardedAdLoaded] = useState(false);
 
   useEffect(() => {
     loadQuestion();
+    const unsubscribeLoaded = rewardedAd.addAdEventListener(
+      RewardedAdEventType.LOADED,
+      () => {
+        setRewardedAdLoaded(true);
+      },
+    );
+    const unsubscribeEarned = rewardedAd.addAdEventListener(
+      RewardedAdEventType.EARNED_REWARD,
+      reward => {
+        console.log('User earned reward of ', reward);
+        setShowSolutionModal(true);
+      },
+    );
+
+    // Start loading the rewarded ad straight away
+    rewardedAd.load();
+
+    // Unsubscribe from events on unmount
+    return () => {
+      unsubscribeLoaded();
+      unsubscribeEarned();
+    };
   }, [level]);
 
   const loadQuestion = async () => {
@@ -207,6 +244,35 @@ const QuestionScreen = ({route, navigation}) => {
       setTimeout(() => {
         setShowErrorModal(false);
       }, 1500);
+    }
+  };
+
+  const showRewardedAd = () => {
+    if (rewardedAdLoaded) {
+      rewardedAd.show().catch(error => {
+        // console.error('Ad show error:', error);
+        Alert.alert(
+          'Quick Update',
+          'We encountered a small hiccup with the ad, but no worries - you can still view the solution!',
+          [
+            {
+              text: 'Show Solution',
+              onPress: () => setShowSolutionModal(true),
+            },
+          ],
+        );
+      });
+    } else {
+      Alert.alert(
+        'Just a Moment',
+        'The ad is taking a bit longer to load. We will show you the solution right away instead!',
+        [
+          {
+            text: 'Show Solution',
+            onPress: () => setShowSolutionModal(true),
+          },
+        ],
+      );
     }
   };
 
@@ -336,9 +402,7 @@ const QuestionScreen = ({route, navigation}) => {
             <Text style={styles.iconButtonText}>Hint</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity
-            style={styles.iconButton}
-            onPress={() => setShowSolutionModal(true)}>
+          <TouchableOpacity style={styles.iconButton} onPress={showRewardedAd}>
             <Icon
               name="book-open-page-variant"
               size={wp('6%')}
