@@ -74,7 +74,7 @@ export default function App() {
           component={JeeLevelsScreen}
           initialParams={{questions: questionsData.questions}}
           options={({navigation}) => ({
-            title: 'JEE Levels',
+            title: 'JEE Mains Levels',
             headerLeft: () => (
               <TouchableOpacity
                 onPress={() => navigation.navigate('Home')}

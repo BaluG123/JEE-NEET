@@ -12,6 +12,11 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import {BannerAd, BannerAdSize, TestIds} from 'react-native-google-mobile-ads';
+
+const adUnitId = __DEV__
+  ? TestIds.ADAPTIVE_BANNER
+  : 'ca-app-pub-2627956667785383/7800891012';
 
 const {width} = Dimensions.get('window');
 
@@ -129,46 +134,6 @@ const JEEScreen = () => {
     ],
   };
 
-  //   // Your existing topics data...
-  //   const physicsTopics = {
-  //     'Mechanics': [
-  //       'Kinematics',
-  //       'Laws of Motion',
-  //       'Work, Energy and Power',
-  //       'Rotational Motion',
-  //       'Gravitation',
-  //       'Properties of Solids and Liquids'
-  //     ],
-  //     // ... rest of physics topics
-  //   };
-
-  //   const chemistryTopics = {
-  //     'Physical Chemistry': [
-  //       'States of Matter',
-  //       'Atomic Structure',
-  //       'Chemical Bonding',
-  //       'Chemical Thermodynamics',
-  //       'Solutions',
-  //       'Electrochemistry',
-  //       'Chemical Kinetics',
-  //       'Surface Chemistry',
-  //       'Nuclear Chemistry'
-  //     ],
-  //     // ... rest of chemistry topics
-  //   };
-
-  //   const mathematicsTopics = {
-  //     'Algebra': [
-  //       'Complex Numbers',
-  //       'Matrices and Determinants',
-  //       'Sets, Relations and Functions',
-  //       'Mathematical Induction',
-  //       'Permutations and Combinations',
-  //       'Binomial Theorem'
-  //     ],
-  //     // ... rest of mathematics topics
-  //   };
-
   return (
     <View style={styles.syllabusContainer}>
       <LinearGradient
@@ -195,6 +160,17 @@ const JEEScreen = () => {
           '#7B1FA2',
         ])}
       </Animated.ScrollView>
+      <View style={{width, alignItems: 'center'}}>
+        <BannerAd
+          unitId={adUnitId}
+          size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+          requestOptions={{
+            networkExtras: {
+              collapsible: 'bottom',
+            },
+          }}
+        />
+      </View>
     </View>
   );
 };

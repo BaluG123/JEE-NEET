@@ -1,251 +1,3 @@
-// import React from 'react';
-// import {
-//   View,
-//   Text,
-//   ScrollView,
-//   TouchableOpacity,
-//   StyleSheet,
-// } from 'react-native';
-// import LinearGradient from 'react-native-linear-gradient';
-// import Animated, {FadeInUp} from 'react-native-reanimated';
-// import {
-//   widthPercentageToDP as wp,
-//   heightPercentageToDP as hp,
-// } from 'react-native-responsive-screen';
-
-// const JEEAdvancedSyllabus = () => {
-//   const subjects = {
-//     physics: {
-//       title: 'Physics',
-//       topics: [
-//         {
-//           title: 'Mechanics',
-//           subtopics: [
-//             'Classical Mechanics',
-//             'Fluid Mechanics',
-//             'Thermal Physics',
-//             'Rotational Dynamics',
-//             'Oscillations',
-//             'Waves and Sound',
-//             'Center of Mass',
-//             'Collision and Momentum',
-//             'Work, Energy, Power',
-//           ],
-//         },
-//         {
-//           title: 'Electricity & Magnetism',
-//           subtopics: [
-//             'Electrostatics',
-//             'Current Electricity',
-//             'Magnetic Effects',
-//             'Electromagnetic Induction',
-//             'Alternating Current',
-//             'Electromagnetic Waves',
-//             'Electric Field and Potential',
-//             'Capacitance',
-//             'Magnetism in Matter',
-//           ],
-//         },
-//         {
-//           title: 'Modern Physics',
-//           subtopics: [
-//             'Quantum Physics',
-//             'Atomic Structure',
-//             'Nuclear Physics',
-//             'Photoelectric Effect',
-//             'X-rays',
-//             'Wave-Particle Duality',
-//             'Radioactivity',
-//             'Semiconductor Devices',
-//           ],
-//         },
-//       ],
-//     },
-//     chemistry: {
-//       title: 'Chemistry',
-//       topics: [
-//         {
-//           title: 'Physical Chemistry',
-//           subtopics: [
-//             'Chemical Kinetics',
-//             'Thermodynamics',
-//             'Electrochemistry',
-//             'Surface Chemistry',
-//             'Nuclear Chemistry',
-//             'Solutions and Colligative Properties',
-//             'Phase Equilibrium',
-//             'Chemical Equilibrium',
-//             'Ionic Equilibrium',
-//           ],
-//         },
-//         {
-//           title: 'Organic Chemistry',
-//           subtopics: [
-//             'General Organic Chemistry',
-//             'Hydrocarbons',
-//             'Aromatic Compounds',
-//             'Alcohols and Ethers',
-//             'Carbonyl Compounds',
-//             'Carboxylic Acids',
-//             'Amines',
-//             'Biomolecules',
-//             'Polymers',
-//             'Chemistry in Everyday Life',
-//           ],
-//         },
-//         {
-//           title: 'Inorganic Chemistry',
-//           subtopics: [
-//             'Periodic Table',
-//             'Chemical Bonding',
-//             'd and f Block Elements',
-//             'Coordination Compounds',
-//             'Metallurgy',
-//             'Environmental Chemistry',
-//             'Qualitative Analysis',
-//             'Salt Analysis',
-//           ],
-//         },
-//       ],
-//     },
-//     mathematics: {
-//       title: 'Mathematics',
-//       topics: [
-//         {
-//           title: 'Algebra',
-//           subtopics: [
-//             'Complex Numbers',
-//             'Matrices and Determinants',
-//             'Permutations and Combinations',
-//             'Mathematical Induction',
-//             'Binomial Theorem',
-//             'Sequences and Series',
-//             'Vector Algebra',
-//             'Mathematical Logic',
-//           ],
-//         },
-//         {
-//           title: 'Calculus',
-//           subtopics: [
-//             'Functions and Relations',
-//             'Limits and Continuity',
-//             'Differentiation',
-//             'Applications of Derivatives',
-//             'Indefinite Integration',
-//             'Definite Integration',
-//             'Differential Equations',
-//             'Area Under Curves',
-//             'Vector Calculus',
-//           ],
-//         },
-//         {
-//           title: 'Coordinate Geometry',
-//           subtopics: [
-//             'Straight Lines',
-//             'Circles',
-//             'Parabola',
-//             'Ellipse',
-//             'Hyperbola',
-//             '3D Geometry',
-//             'Transformation of Axes',
-//             'Polar Coordinates',
-//           ],
-//         },
-//       ],
-//     },
-//   };
-
-//   const renderSubject = subject => (
-//     <Animated.View
-//       entering={FadeInUp.delay(200).springify()}
-//       style={styles.subjectContainer}
-//       key={subject.title}>
-//       <LinearGradient
-//         colors={['#E91E63', '#C2185B']}
-//         style={styles.subjectHeader}
-//         start={{x: 0, y: 0}}
-//         end={{x: 1, y: 0}}>
-//         <Text style={styles.subjectTitle}>{subject.title}</Text>
-//       </LinearGradient>
-//       {subject.topics.map((topic, index) => (
-//         <View key={index} style={styles.topicContainer}>
-//           <Text style={styles.topicTitle}>{topic.title}</Text>
-//           {topic.subtopics.map((subtopic, subIndex) => (
-//             <Text key={subIndex} style={styles.subtopic}>
-//               • {subtopic}
-//             </Text>
-//           ))}
-//         </View>
-//       ))}
-//     </Animated.View>
-//   );
-
-//   return (
-//     <View style={styles.container}>
-//       <LinearGradient
-//         colors={['#1a1a1a', '#2a2a2a']}
-//         style={styles.background}
-//         start={{x: 0, y: 0}}
-//         end={{x: 1, y: 1}}
-//       />
-//       <ScrollView
-//         showsVerticalScrollIndicator={false}
-//         contentContainerStyle={styles.scrollContainer}>
-//         {Object.values(subjects).map(subject => renderSubject(subject))}
-//       </ScrollView>
-//     </View>
-//   );
-// };
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//   },
-//   background: {
-//     position: 'absolute',
-//     left: 0,
-//     right: 0,
-//     top: 0,
-//     bottom: 0,
-//   },
-//   scrollContainer: {
-//     padding: wp('4%'),
-//   },
-//   subjectContainer: {
-//     marginBottom: hp('3%'),
-//     backgroundColor: 'rgba(255, 255, 255, 0.05)',
-//     borderRadius: wp('4%'),
-//     overflow: 'hidden',
-//   },
-//   subjectHeader: {
-//     padding: wp('4%'),
-//   },
-//   subjectTitle: {
-//     fontSize: wp('6%'),
-//     fontWeight: 'bold',
-//     color: '#fff',
-//     textAlign: 'center',
-//   },
-//   topicContainer: {
-//     padding: wp('4%'),
-//   },
-//   topicTitle: {
-//     fontSize: wp('5%'),
-//     fontWeight: '600',
-//     color: '#fff',
-//     marginBottom: hp('1%'),
-//   },
-//   subtopic: {
-//     fontSize: wp('4%'),
-//     color: '#fff',
-//     opacity: 0.8,
-//     marginLeft: wp('4%'),
-//     marginBottom: hp('0.5%'),
-//   },
-// });
-
-// export default JEEAdvancedSyllabus;
-
 import React from 'react';
 import {
   View,
@@ -260,6 +12,12 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+
+import {BannerAd, BannerAdSize, TestIds} from 'react-native-google-mobile-ads';
+
+const adUnitId = __DEV__
+  ? TestIds.ADAPTIVE_BANNER
+  : 'ca-app-pub-2627956667785383/1847762732';
 
 const {width} = Dimensions.get('window');
 
@@ -407,11 +165,6 @@ const JEEAdvancedScreen = () => {
         start={{x: 0, y: 0}}
         end={{x: 1, y: 1}}
       />
-      {/* <Animated.Text
-        entering={FadeInDown.delay(200).springify()}
-        style={styles.syllabusTitle}>
-        JEE Advanced Syllabus
-      </Animated.Text> */}
       <Animated.ScrollView
         style={styles.scrollView}
         showsVerticalScrollIndicator={false}>
@@ -425,6 +178,17 @@ const JEEAdvancedScreen = () => {
           '#512DA8',
         ])}
       </Animated.ScrollView>
+      <View style={{width, alignItems: 'center'}}>
+        <BannerAd
+          unitId={adUnitId}
+          size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+          requestOptions={{
+            networkExtras: {
+              collapsible: 'bottom',
+            },
+          }}
+        />
+      </View>
     </View>
   );
 };
