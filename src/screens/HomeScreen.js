@@ -6,6 +6,11 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import {BannerAd, BannerAdSize, TestIds} from 'react-native-google-mobile-ads';
+
+const adUnitId = __DEV__
+  ? TestIds.ADAPTIVE_BANNER
+  : 'ca-app-pub-2627956667785383/2282074677';
 
 const HomeScreen = ({navigation}) => {
   return (
@@ -109,6 +114,17 @@ const HomeScreen = ({navigation}) => {
           </LinearGradient>
         </TouchableOpacity> */}
       </Animated.View>
+      <View style={{position: 'absolute', bottom: 0, width: '100%', zIndex: 1}}>
+        <BannerAd
+          unitId={adUnitId}
+          size={BannerAdSize.ANCHORED_ADAPTIVE_BANNER}
+          requestOptions={{
+            networkExtras: {
+              collapsible: 'bottom',
+            },
+          }}
+        />
+      </View>
     </View>
   );
 };
