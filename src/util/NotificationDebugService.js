@@ -49,13 +49,13 @@ class NotificationDebugService {
         name: 'Default Channel',
       });
 
-      await notifee.displayNotification({
-        title: 'Test Notification',
-        body: 'This is a test local notification',
-        android: {
-          channelId,
-        },
-      });
+      //   await notifee.displayNotification({
+      //     // title: 'Test Notification',
+      //     // body: 'This is a test local notification',
+      //     android: {
+      //       channelId,
+      //     },
+      //   });
 
       return {success: true, message: 'Local notification sent'};
     } catch (error) {
