@@ -1,4 +1,4 @@
-package com.firstapp
+package com.jeepreparationIIT
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

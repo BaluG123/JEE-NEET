@@ -1,4 +1,4 @@
-package com.firstapp
+package com.jeepreparationIIT
 
 import android.app.Application
 import com.facebook.react.PackageList
