@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './src/screens/HomeScreen';
@@ -14,10 +14,58 @@ import {Text, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import JEEAdvancedSyllabus from './src/screens/JEEAdvancedSyllabus';
 import JEEAdvancedPractice from './src/screens/JEEAdvancedPractice';
+import NotificationService from './src/util/NotificationService';
+import NotificationDebugService from './src/util/NotificationDebugService';
+import {getMessaging} from '@react-native-firebase/messaging';
+import NotificationPermissionHandler from './src/util/NotificationPermissionHandler';
 
 const Stack = createStackNavigator();
 
 export default function App() {
+  useEffect(() => {
+    async function setupNotifications() {
+      // Request permissions first
+      const hasPermission =
+        await NotificationPermissionHandler.checkAndRequestPermissions();
+
+      if (hasPermission) {
+        // Continue with your existing notification setup
+        const token = await getMessaging().getToken();
+        console.log('FCM Token:', token);
+        // ... rest of your notification setup
+      }
+    }
+
+    setupNotifications();
+  }, []);
+  useEffect(() => {
+    async function setupNotifications() {
+      const hasPermission = await NotificationService.requestUserPermission();
+      if (hasPermission) {
+        const token = await NotificationService.getFCMToken();
+        // Send token to your backend
+
+        // Setup notification listeners
+        const unsubscribe = NotificationService.setupNotificationListeners();
+        return unsubscribe;
+      }
+    }
+
+    setupNotifications();
+  }, []);
+
+  useEffect(() => {
+    async function debugNotifications() {
+      const result = await NotificationDebugService.checkNotificationSetup();
+      console.log('Debug Result:', result);
+
+      // Test local notification to verify basic notification setup
+      const localTest = await NotificationDebugService.testLocalNotification();
+      console.log('Local Test Result:', localTest);
+    }
+
+    debugNotifications();
+  }, []);
   return (
     <NavigationContainer>
       <Stack.Navigator

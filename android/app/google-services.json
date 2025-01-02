@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "719526307492",
+    "project_id": "jee-mains-and-advanced-b8eed",
+    "storage_bucket": "jee-mains-and-advanced-b8eed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:719526307492:android:1d88252615ffadf4c06831",
+        "android_client_info": {
+          "package_name": "com.firstapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANcKnunEOLF6ywq90S0Pi5u2DNas3n6xs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
